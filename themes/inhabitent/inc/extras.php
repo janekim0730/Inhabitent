@@ -28,19 +28,27 @@ function inhabitent_remove_submenus() {
 }
 add_action( 'admin_init', 'inhabitent_remove_submenus', 102 );
 
-//change WordPress logo to custom logo
-function my_login_logo() { ?>
-    <style type="text/css">
-        #login h1 a, .login h1 a {
-            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-text-dark.svg);
-            padding-bottom: 30px;
-        }
-    </style>
-<?php }
-add_action( 'login_enqueue_scripts', 'my_login_logo' );
+// /*change WordPress logo to custom logo*/
+// function inhabitent_login_logo() {
+// 	echo '<style type="text/css">
+// 	h1 a { background-image: url('.get_bloginfo('template_directory').'/images/logos/inhabitent-logo-text-dark.svg) !important; }
+// 	</style>';
+// }
+// add_action('login_head', 'inhabitent_login_logo');
+
+// custom login for theme
+function inhabitent_custom_login() {
+	echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('stylesheet_directory') . '/build/css/customlogin.css" />';
+}
+
+add_action('login_head', 'inhabitent_custom_login');
+
 
 // add function that removes "powered by wordpress"
-add_action('login_head', 'inhabitent_custom_login');
+function inhabitent_login_caption(){
+	return 'Return to home page';
+}
+add_filter( 'login_headertitle', 'inhabitent_login_caption');
 
 //change the url linked on the log-in logo to home page instead of WordPress site
 function inhabitent_login_url( $url ){
