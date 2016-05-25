@@ -50,8 +50,38 @@ function inhabitent_login_caption(){
 }
 add_filter( 'login_headertitle', 'inhabitent_login_caption');
 
+
 //change the url linked on the log-in logo to home page instead of WordPress site
 function inhabitent_login_url( $url ){
 	return home_url();
 }
 add_filter( 'login_headerurl', 'inhabitent_login_url' );
+
+//custom function for "about page header"
+function inhabitent_about_header() {
+
+		if(!is_page_template( 'about.php' )){
+			return;
+}
+        $background_image = CFS()->get('hero_image');
+        $custom_css = "
+              .about-header{
+                        background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%),
+												url('$background_image') center center no-repeat;
+												background-size: cover;
+                }";
+        wp_add_inline_style( 'inhbitent-style', $custom_css );
+}
+add_action( 'wp_enqueue_scripts', 'inhabitent_about_header' );
+
+// show more than 10products and in alphabetical order (default: 10, list by date)
+function inhabitent_filter_product_query($query){
+		if( is_post_type_archive( 'product' ) && !is_admin() && $query->is_main_query()){
+			$query->set('orderby', 'title');
+			$query->set('order', 'ASC');
+			$query->set('posts_per_page', 16);
+		}
+}
+add_action('pre_get_posts', 'inhabitent_filter_product_query' );
+
+?>

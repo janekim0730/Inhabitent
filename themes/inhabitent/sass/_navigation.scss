@@ -5,15 +5,16 @@
 /* Links */
 
 a {
-	color: $color__link;
+	color: #248a83;
+	text-decoration: none;
 
 	&:visited {
-		color: $color__link-visited;
+		color: #248a83;
 	}
 	&:hover,
 	&:focus,
 	&:active {
-		color: $color__link-hover;
+		color: #2f1339;
 	}
 	&:focus {
 		outline: thin dotted;
@@ -27,10 +28,7 @@ a {
 /* Menus */
 
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
+		clear: both;
 
 	ul {
 		display: none;
@@ -77,6 +75,7 @@ a {
 		}
 	}
 	li {
+		padding-left: 1.5rem;
 		float: left;
 		position: relative;
 
@@ -87,6 +86,7 @@ a {
 	a {
 		display: block;
 		text-decoration: none;
+		color: #248a83;
 	}
 
 	.current_page_item > a,
@@ -115,7 +115,7 @@ a {
 .post-navigation {
 
 	.site-main & {
-		margin: 0 0 $base__space-unit;
+		margin: 0 0 1.5rem;
 		overflow: hidden;
 	}
 
