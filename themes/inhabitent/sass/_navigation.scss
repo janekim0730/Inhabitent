@@ -28,19 +28,20 @@ a {
 /* Menus */
 
 .main-navigation {
+		font-family: Novecento;
 		clear: both;
 
 	ul {
 		display: none;
 		list-style: none;
 		margin: 0;
-		padding-left: 0;
+		padding-left: 1.5rem;
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
 			position: absolute;
-			top: $base__space-unit;
+			top: 0;
 			left: -999em;
 			z-index: 99999;
 
@@ -115,7 +116,7 @@ a {
 .post-navigation {
 
 	.site-main & {
-		margin: 0 0 1.5rem;
+		margin: 0;
 		overflow: hidden;
 	}
 

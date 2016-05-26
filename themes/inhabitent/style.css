@@ -44,7 +44,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Front page
 --------------------------------------------------------------*/
 html {
-  font-family: sans-serif;
+  font-family: Merriweather, sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
@@ -258,12 +258,22 @@ th {
   font-weight: lighter;
   font-style: italic; }
 
-/* Font Awesome */
 @font-face {
-  font-family: 'FontAwesome';
-  src: url("../font-awesome/fonts/fontawesome-webfont.eot");
-  src: url("../font-awesome/fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../font-awesome/fonts/fontawesome-webfont.woff2") format("woff2"), url("../font-awesome/fonts/fontawesome-webfont.woff") format("woff"), url("../font-awesome/fonts/fontawesome-webfont.ttf") format("truetype"), url("../font-awesome/fonts/fontawesome-webfont.svg") format("svg");
+  font-family: 'Novecento';
+  src: url("../../fonts/Novecento/Novecentosanswide-Normal-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/Novecento/Novecentosanswide-Normal-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/Novecento/Novecentosanswide-Normal-webfont.woff2") format("woff2"), url("../../fonts/Novecento/Novecentosanswide-Normal-webfont.woff") format("woff"), url("../../fonts/Novecento/Novecentosanswide-Normal-webfont.ttf") format("truetype"), url("../../fonts/Novecento/Novecentosanswide-Normal-webfont.svg") format("svg");
+  /* Legacy iOS */
   font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento';
+  src: url("../../fonts/Novecento/Novecentosanswide-DemiBold-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/Novecento/Novecentosanswide-DemiBold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/Novecento/Novecentosanswide-DemiBold-webfont.woff2") format("woff2"), url("../../fonts/Novecento/Novecentosanswide-DemiBold-webfont.woff") format("woff"), url("../../fonts/Novecento/Novecentosanswide-DemiBold-webfont.ttf") format("truetype"), url("../../fonts/Novecento/Novecentosanswide-DemiBold-webfont.svg") format("svg");
+  /* Legacy iOS */
+  font-weight: bold;
   font-style: normal; }
 
 /*--------------------------------------------------------------
@@ -275,34 +285,41 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: Merriweather, sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
+  font-family: Novecento;
   clear: both; }
+
+h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 3rem; }
 
 /* Copy */
 p {
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5rem; }
 
 dfn, cite, em, i {
   font-style: italic; }
 
 blockquote {
-  margin: 0 1.5em; }
+  margin: 0 1.5rem; }
 
 address {
-  margin: 0 0 1.5em; }
+  margin: 0 0 1.5rem; }
 
 pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
   font-size: 15px;
   font-size: 0.9375rem;
-  line-height: 1.6;
+  line-height: 1.75;
   margin-bottom: 1.6em;
   max-width: 100%;
   overflow: auto;
@@ -348,13 +365,13 @@ blockquote, q {
     content: ""; }
 
 hr {
-  background-color: #ccc;
+  background-color: #ffffff;
   border: 0;
   height: 1px;
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5rem; }
 
 ul, ol {
-  margin: 0 0 1.5em 3em; }
+  margin: 0; }
 
 ul {
   list-style: disc; }
@@ -365,13 +382,14 @@ ol {
 li > ul,
 li > ol {
   margin-bottom: 0;
-  margin-left: 1.5em; }
+  margin-left: 0;
+  margin-bottom: 0; }
 
 dt {
   font-weight: bold; }
 
 dd {
-  margin: 0 1.5em 1.5em; }
+  margin: 0; }
 
 img {
   height: auto;
@@ -380,8 +398,13 @@ img {
   /* Adhere to container width. */ }
 
 table {
-  margin: 0 0 1.5em;
+  margin: 0;
   width: 100%; }
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -391,7 +414,7 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid;
+  border: 1px solid #e1e1e1;
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
   background: #e6e6e6;
@@ -400,7 +423,7 @@ input[type="submit"] {
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
-  padding: .6em 1em .4em;
+  padding: .75rem 1.8rem;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
   button:hover,
   input[type="button"]:hover,
@@ -425,8 +448,8 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  color: #666;
-  border: 1px solid #ccc;
+  color: #404040;
+  border: 1px solid #e1e1e1;
   border-radius: 3px; }
   input[type="text"]:focus,
   input[type="email"]:focus,
@@ -465,17 +488,18 @@ a {
 
 /* Menus */
 .main-navigation {
+  font-family: Novecento;
   clear: both; }
   .main-navigation ul {
     display: none;
     list-style: none;
     margin: 0;
-    padding-left: 0; }
+    padding-left: 1.5rem; }
     .main-navigation ul ul {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
       position: absolute;
-      top: 1.5em;
+      top: 0;
       left: -999em;
       z-index: 99999; }
       .main-navigation ul ul ul {
@@ -512,7 +536,7 @@ a {
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
-  margin: 0 0 1.5rem;
+  margin: 0;
   overflow: hidden; }
 
 .comment-navigation .nav-previous,
@@ -564,12 +588,12 @@ a {
 .alignleft {
   display: inline;
   float: left;
-  margin-right: 1.5em; }
+  margin-right: 1.5rem; }
 
 .alignright {
   display: inline;
   float: right;
-  margin-left: 1.5em; }
+  margin-left: 1.5rem; }
 
 .aligncenter {
   clear: both;
@@ -589,7 +613,7 @@ a {
 # Widgets
 --------------------------------------------------------------*/
 .widget {
-  margin: 0 0 1.5em;
+  margin: 0 0 1.5rem;
   /* Make sure select elements fit in widgets. */ }
   .widget select {
     max-width: 100%; }
@@ -606,7 +630,7 @@ a {
   display: block; }
 
 .hentry {
-  margin: 0 0 1.5em; }
+  margin: 0 0 1.5rem; }
 
 .updated:not(.published) {
   display: none; }
@@ -618,11 +642,11 @@ a {
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5em 0 0; }
+  margin: 1.5rem 0 0; }
 
 .page-links {
   clear: both;
-  margin: 0 0 1.5em; }
+  margin: 0 0 1.5rem; }
 
 /* Asides */
 .blog .format-aside .entry-title,
@@ -655,7 +679,7 @@ object {
 
 /* Captions */
 .wp-caption {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5rem;
   max-width: 100%; }
   .wp-caption img[class*="wp-image-"] {
     display: block;
@@ -669,7 +693,7 @@ object {
 
 /* Galleries*/
 .gallery {
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5rem; }
 
 .gallery-item {
   display: inline-block;
@@ -718,11 +742,6 @@ object {
       justify-content: space-between;
   text-transform: uppercase; }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1120px; }
-
 .site-header h1 {
   background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
   background-size: 50px 30px;
@@ -741,7 +760,7 @@ object {
 .home-hero {
   -ms-flex-align: center;
       align-items: center;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg) no-repeat top;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url(../../images/home-hero.jpg) no-repeat top;
   background-size: cover,cover;
   display: -ms-flexbox;
   display: flex;
@@ -749,7 +768,8 @@ object {
       flex-direction: column;
   -ms-flex-pack: center;
       justify-content: center;
-  height: 100vh; }
+  height: 100vh;
+  margin-bottom: 4rem; }
 
 .home-hero img {
   height: 280px;
@@ -778,23 +798,42 @@ object {
   height: 70px;
   width: 70px; }
 
-.btn {
-  background-color: #248a83;
-  padding: .75rem 1.8rem; }
-
-.inahabitent-journals {
+.inhabitent-journals {
   margin-bottom: 4.5rem; }
-  .inahabitent-journals h1 {
-    font-size: 2.4rem;
-    font-weight: 400;
-    margin-bottom: 3.75rem;
-    text-align: center; }
 
 .inhabitent-journals ul {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+  list-style-type: none;
+  padding-left: 0; }
+
+.inhabitent-journals ul li {
+  border: 1px solid #e1e1e1;
+  -ms-flex: 0 1 32%;
+      flex: 0 1 32%; }
+
+.thumbnail-wrapper {
+  background-color: #e1e1e1;
+  height: 250px;
+  overflow: hidden;
+  position: relative; }
+  .thumbnail-wrapper img {
+    max-height: 245px;
+    max-width: none;
+    position: absolute; }
+
+.post-info-wrapper {
+  padding: 0.75rem; }
+
+.entry-meta {
+  font-size: 0.75rem; }
+
+.entry-title {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 3.75rem; }
 
 /*///////////// Blog Posts ///////////// */
 /*///////////// About Page ///////////// */
