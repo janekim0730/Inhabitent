@@ -1,5 +1,11 @@
 <?php
-
+/**
+ * The template for displaying archive pages.
+ *
+ * @package RED_Starter_Theme
+ * Template Name: Archive Product Template
+ */
+ 
 get_header(); ?>
 
 	<div id="primary" class="content-area">

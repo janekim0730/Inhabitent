@@ -288,7 +288,7 @@ textarea {
   font-family: Merriweather, sans-serif;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.5; }
+  line-height: 1.75; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -630,7 +630,7 @@ a {
   display: block; }
 
 .hentry {
-  margin: 0 0 1.5rem; }
+  margin: 0 0 4.5rem; }
 
 .updated:not(.published) {
   display: none; }
@@ -837,6 +837,21 @@ object {
 
 /*///////////// Blog Posts ///////////// */
 /*///////////// About Page ///////////// */
+.about-content {
+  margin: 3rem auto;
+  max-width: 800px; }
+
+.custom-hero {
+  background: lindear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(/../../images/about-hero.jpg) no-repeat center bottom;
+  background-size: cover, cover;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  height: 100vh; }
+
 /*///////////// Footer ///////////// */
 .site-footer {
   background-image: url(../../images/dark-wood.png);
@@ -863,6 +878,15 @@ object {
   font-size: 1.2rem;
   margin-bottom: 1rem;
   text-transform: uppercase; }
+
+.contact a {
+  color: #ffffff;
+  text-decoration: none; }
+  .contact a:visited {
+    color: #ffffff; }
+  .contact a:hover, .contact a:focus, .contact a:active {
+    color: #ffffff;
+    text-decoration: underline; }
 
 .site-info {
   padding: 1.5rem 0;

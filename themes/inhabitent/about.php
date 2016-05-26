@@ -1,27 +1,35 @@
 <?php
 /**
- * The template for displaying all single posts.
+ * Template Name: About Template
  *
  * @package RED_Starter_Theme
- * Template Name: About Template
  */
 
 get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-    <div class="about-header">
-      <h1>About</h1>
-    </div>
+			<article class="hentry">
 
-    <!-- <h1>Our Story</h1>
-		<?php echo CFS()->get(''); ?> -->
+				<header class="custom-hero">
+			    <div class="container">
+			      <h1>about</h1>
+			    </div>
+				</header>
 
+				<div class="container">
+					<div class="about-content">
+						
+						<h1>our story</h1>
+						<?php echo CFS()->get( 'our_story' ); ?>
 
+						<h1>our team</h1>
+						<?php echo CFS()->get( 'our_team' ); ?>
+				  </div>
 
-
+			  </div>
+			</article>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

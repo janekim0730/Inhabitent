@@ -131,8 +131,20 @@
 
 /*///////////// About Page ///////////// */
 
+.about-content{
+  margin: 3rem auto;
+  max-width: 800px;
+}
 
-
+.custom-hero{
+  background: lindear-gradient(to bottom, rgba(0,0,0,0.4)0%, rgba(0,0,0,0.4)100%),
+              url(/../../images/about-hero.jpg) no-repeat center bottom;
+  background-size: cover, cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
 
 
 /*///////////// Footer ///////////// */
@@ -164,6 +176,22 @@
   font-size: 1.2rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
+}
+
+.contact a{
+
+  color: #ffffff;
+  text-decoration: none;
+
+  &:visited {
+    color: #ffffff;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: #ffffff;
+    text-decoration: underline;
+  }
 }
 
 .site-info{
