@@ -7,8 +7,8 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div id="primary" class="about-content-area">
+		<main id="main" class="about-main" role="main">
 			<article class="hentry">
 
 				<header class="about-header">
