@@ -6,38 +6,29 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+<!-- Hero Image -->
 		<section class="home-hero">
 			<img src="<?php bloginfo('template_directory'); ?>/images/logos/inhabitent-logo-full.svg" alt="inhabitent full logo" />
 		</section>
 
-		<section class="shop-stuff">
+<!-- Shop Stuff -->
+	<section class="shop-stuff">
 			<div class="product-info container" >
 				<h1>shop stuff</h1>
 				<div class="product-type-blocks">
-					<div class="product-type-wrapper">
-						<img src="../images/product-type-icons/do.svg" class="logo" alt="Do Stuff"/>
-						<p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
-						<p><a href="" class="btn">Do Stuff</a></p>
-					</div>
-					<div class="product-type-wrapper">
-						<img src="images/product-type-icons/eat.svg" class="logo" alt="Eat Stuff"/>
-						<p>Nothing beats food cooked over a fire. We have all you need for good camping eats.</p>
-						<p><a href="" class="btn">Eat Stuff</a></p>
-					</div>
-					<div class="product-type-wrapper">
-						<img src="images/product-type-icons/sleep.svg" class="logo" alt="Sleep Stuff"/>
-						<p>Get a good night's rest in the wild in a home away from home that travels well.</p>
-						<p><a href="" class="btn">Sleep Stuff</a></p>
-					</div>
-					<div class="product-type-wrapper">
-						<img src="images/product-type-icons/wear.svg" class="logo" alt="Wear Stuff"/>
-						<p>From flannel shirts to toques, look the part while roughing it in the great outdoors.</p>
-						<p><a href="" class="btn">Wear Stuff</a></p>
-					</div>
+					<?php $terms = get_terms( array( 'taxonomy' => 'product-type'));?>
+						<?php foreach ($terms as $term) : ?>
+							<div class="product-type-wrapper">
+					    <img class="logo" src="<?php bloginfo('template_directory'); ?>/images/product-type-icons/<?php echo $term->slug ?>.svg" alt="product-type" />
+							<p><?php echo $term->description; ?></p>
+							<a class="btn" href="<?php echo get_term_link($term, 'product-type') ?>"><?php echo $term-> name; ?> Stuff</a>
+						</div>
+						<?php endforeach; ?>
 				</div>
 			</div>
 		</section>
 
+<!-- Inhabitent Journal -->
 		<section class="main-journal container">
 			<div class="inhabitent-journals">
 			 <h1>inhabitent journal</h1>
@@ -66,6 +57,8 @@ get_header(); ?>
 			 </ul>
 		 </div>
 		</section>
+
+<!-- Latest Adventures -->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

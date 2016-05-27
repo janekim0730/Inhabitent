@@ -11,7 +11,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<article class="hentry">
 
-				<header class="custom-hero">
+				<header class="about-header">
 			    <div class="container">
 			      <h1>about</h1>
 			    </div>
@@ -19,7 +19,7 @@ get_header(); ?>
 
 				<div class="container">
 					<div class="about-content">
-						
+
 						<h1>our story</h1>
 						<?php echo CFS()->get( 'our_story' ); ?>
 

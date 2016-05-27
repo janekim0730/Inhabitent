@@ -374,7 +374,7 @@ ul, ol {
   margin: 0; }
 
 ul {
-  list-style: disc; }
+  list-style: none; }
 
 ol {
   list-style: decimal; }
@@ -781,8 +781,8 @@ object {
 .product-type-blocks {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   text-align: center; }
 
 .product-type-wrapper {
@@ -793,10 +793,11 @@ object {
   max-width: 23.5%;
   padding: 0.75rem;
   text-align: center; }
-
-.product-type img {
-  height: 70px;
-  width: 70px; }
+  .product-type-wrapper:hover {
+    border-color: #d99054; }
+  .product-type-wrapper .logo {
+    height: 70px;
+    width: 70px; }
 
 .inhabitent-journals {
   margin-bottom: 4.5rem; }
@@ -835,22 +836,36 @@ object {
   margin-top: 0;
   margin-bottom: 3.75rem; }
 
+/*///////////// Shop Page ///////////// */
+.shop-nav-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .shop-nav-container a {
+    margin: 0 10px; }
+
+.shop-header {
+  border-bottom: 1px dashed #e1e1e1;
+  padding-bottom: 40px;
+  margin-bottom: 40px; }
+
 /*///////////// Blog Posts ///////////// */
 /*///////////// About Page ///////////// */
 .about-content {
   margin: 3rem auto;
   max-width: 800px; }
 
-.custom-hero {
-  background: lindear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(/../../images/about-hero.jpg) no-repeat center bottom;
-  background-size: cover, cover;
+.about-header {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-pack: center;
       justify-content: center;
-  height: 100vh; }
+  height: 100vh;
+  color: #fff;
+  font-weight: bold; }
 
 /*///////////// Footer ///////////// */
 .site-footer {
