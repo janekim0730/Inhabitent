@@ -748,104 +748,6 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/*///////////// Front Page ///////////// */
-.front-area {
-  padding-top: 0;
-  margin-right: auto;
-  margin-left: auto; }
-
-.home-hero {
-  -ms-flex-align: center;
-      align-items: center;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url(../../images/home-hero.jpg) no-repeat top;
-  background-size: cover,cover;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: center;
-      justify-content: center;
-  height: 100vh;
-  width: 100%;
-  margin-bottom: 2rem; }
-
-.home-hero img {
-  height: 280px;
-  width: 280px; }
-
-.shop-stuff {
-  margin-bottom: 4rem; }
-
-.product-type-blocks {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  text-align: center; }
-
-.product-type-wrapper {
-  border: 1px solid #e1e1e1;
-  border-top-width: 5px;
-  -ms-flex: 0 1 23.5%;
-      flex: 0 1 23.5%;
-  max-width: 23.5%;
-  padding: 0.75rem;
-  text-align: center; }
-  .product-type-wrapper:hover {
-    border-color: #d99054; }
-  .product-type-wrapper .logo {
-    height: 70px;
-    width: 70px; }
-
-#green-button {
-  color: #fff; }
-
-.inhabitent-journals {
-  margin-bottom: 4.5rem; }
-
-.inhabitent-journals ul {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  list-style-type: none;
-  padding-left: 0; }
-
-.inhabitent-journals ul li {
-  border: 1px solid #e1e1e1;
-  -ms-flex: 0 1 32%;
-      flex: 0 1 32%; }
-  .inhabitent-journals ul li h2 {
-    font-size: 1.3rem;
-    letter-spacing: 2px;
-    line-height: normal; }
-
-.thumbnail-wrapper {
-  background-color: #e1e1e1;
-  height: 250px;
-  overflow: hidden;
-  position: relative; }
-  .thumbnail-wrapper img {
-    left: 50%;
-    max-height: 250px;
-    max-width: none;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -52%);
-    width: auto;
-    height: auto; }
-
-.post-info-wrapper {
-  padding: 0.75rem; }
-
-.journal-meta {
-  font-size: 0.75rem; }
-
-.journal-title {
-  font-size: 1.5rem;
-  margin-top: 0;
-  margin-bottom: 1.5rem; }
-
 /*///////////// Shop Page (Archive-Product) ///////////// */
 .archive-product-area {
   padding-top: 4.5rem; }
@@ -896,7 +798,6 @@ object {
 
 .product-title:before {
   float: left;
-  width: 0;
   white-space: nowrap;
   content: "........"; }
 
@@ -984,6 +885,8 @@ h2 .entry-title {
 .about-content {
   margin: 3rem auto;
   max-width: 800px; }
+  .about-content h1 {
+    font-size: 2rem; }
 
 .about-header {
   display: -ms-flexbox;
@@ -995,6 +898,11 @@ h2 .entry-title {
   height: 100vh;
   color: #fff;
   font-weight: bold; }
+  .about-header h1 {
+    font-size: 3rem; }
+
+.our-story {
+  margin-bottom: 2rem; }
 
 .site-header {
   background-color: rgba(255, 255, 255, 0.8);

@@ -20,14 +20,18 @@ get_header(); ?>
 				<div class="container">
 					<div class="about-content">
 
-						<h1>our story</h1>
-						<?php echo CFS()->get( 'our_story' ); ?>
+						<div class="our-story">
+							<h1>our story</h1>
+							<?php echo CFS()->get( 'our_story' ); ?>
+					 </div>
 
+					 <div class="our-team">
 						<h1>our team</h1>
 						<?php echo CFS()->get( 'our_team' ); ?>
-				  </div>
+				   </div>
 
-			  </div>
+				 </div>
+			 </div>
 			</article>
 		</main><!-- #main -->
 	</div><!-- #primary -->
