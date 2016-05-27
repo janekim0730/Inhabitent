@@ -293,10 +293,11 @@ textarea {
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   font-family: Novecento;
-  clear: both; }
+  clear: both;
+  text-transform: uppercase; }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 400;
   text-align: center;
   margin-bottom: 3rem; }
@@ -414,23 +415,23 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid #e1e1e1;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  font-size: 0.75rem;
+  background-color: rgba(248, 246, 246, 0);
+  border: 1px solid #000;
+  border-radius: 0;
+  color: #000;
+  cursor: poiter;
+  font-family: Novecento, sans-serif;
+  font-size: .9rem;
   line-height: 1;
-  padding: .75rem 1.8rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase; }
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
+    background-color: #248a83;
+    color: #fff; }
   button:active, button:focus,
   input[type="button"]:active,
   input[type="button"]:focus,
@@ -438,8 +439,8 @@ input[type="submit"] {
   input[type="reset"]:focus,
   input[type="submit"]:active,
   input[type="submit"]:focus {
-    border-color: #aaa #bbb #bbb;
-    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
+    background-color: #248a83;
+    color: #fff; }
 
 /* Fields */
 input[type="text"],
@@ -489,7 +490,8 @@ a {
 /* Menus */
 .main-navigation {
   font-family: Novecento;
-  clear: both; }
+  clear: both;
+  text-transfrom: uppercase; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -814,6 +816,10 @@ object {
   border: 1px solid #e1e1e1;
   -ms-flex: 0 1 32%;
       flex: 0 1 32%; }
+  .inhabitent-journals ul li h2 {
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    line-height: normal; }
 
 .thumbnail-wrapper {
   background-color: #e1e1e1;
@@ -821,9 +827,14 @@ object {
   overflow: hidden;
   position: relative; }
   .thumbnail-wrapper img {
-    max-height: 245px;
+    left: 50%;
+    max-height: 250px;
     max-width: none;
-    position: absolute; }
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -52%);
+    width: auto;
+    height: auto; }
 
 .post-info-wrapper {
   padding: 0.75rem; }
@@ -834,14 +845,16 @@ object {
 .entry-title {
   font-size: 1.5rem;
   margin-top: 0;
-  margin-bottom: 3.75rem; }
+  margin-bottom: 1.5rem; }
 
 /*///////////// Shop Page ///////////// */
 .shop-nav-container {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+  font-family: Novecento;
+  font-size: 1.5rem; }
   .shop-nav-container a {
     margin: 0 10px; }
 
@@ -849,6 +862,44 @@ object {
   border-bottom: 1px dashed #e1e1e1;
   padding-bottom: 40px;
   margin-bottom: 40px; }
+
+.product-grid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 1.5rem; }
+
+.product-grid-item {
+  border: 1px solid #e1e1e1;
+  -ms-flex: 0 1 23%;
+      flex: 0 1 23%;
+  max-width: 23%;
+  margin-bottom: 1.5rem; }
+
+.product-info {
+  font-size: .9rem;
+  padding: .75rem 1rem; }
+
+.entry-title {
+  background: #fff;
+  display: inline;
+  font-size: 1rem;
+  padding-right: .25rem;
+  text-transform: none; }
+
+.entry-title:before {
+  float: left;
+  width: 0;
+  white-space: nowrap;
+  content: "............."; }
+
+.price {
+  float: right;
+  padding-left: .25rem;
+  background: #fff; }
 
 /*///////////// Blog Posts ///////////// */
 /*///////////// About Page ///////////// */

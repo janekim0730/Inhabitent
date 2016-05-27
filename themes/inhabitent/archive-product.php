@@ -23,17 +23,15 @@ get_header(); ?>
     </div>
   </div>
 
-  <section class="main-shop container">
-    <div class="inhabitent-shop">
-      <ul>
+      <div class="product-grid">
         <?php
            $args = array( 'post_type' => 'product',
                           'posts_per_page' => 16);
            $recent_products = get_posts( $args ); // returns an array of posts
         ?>
         <?php foreach ( $recent_products as $post ) : setup_postdata( $post ); ?>
-        <li>
-          <div class="product-thumbnail-wrapper">
+        <div class="product-grid-item">
+          <div class="thumbnail-wrapper">
             <a href='<?php echo esc_url( get_permalink() ); ?>'>
               <?php if ( has_post_thumbnail() ) : ?>
                 <?php the_post_thumbnail( 'medium' ); ?>
@@ -41,15 +39,13 @@ get_header(); ?>
               <?php endif; ?>
             </a>
           </div>
-            <div class="product-info-wrapper">
-            <?php echo get_the_title(); ?>
-            <?php echo CFS()->get( 'price' ); ?>
-            </div>
-        </li>
+          <div class="product-info">
+            <p class="entry-title"><?php echo get_the_title(); ?></p>
+            <span class="price"><?php echo CFS()->get( 'price' ); ?></span>
+          </div>
+        </div>
           <?php endforeach; wp_reset_postdata(); ?>
-     </ul>
-   </div>
-  </section>
+     </div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

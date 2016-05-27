@@ -49,9 +49,10 @@ get_header(); ?>
 									<?php red_starter_posted_on(); ?> / <?php comments_number('0 Comments', '1 Comment', '% Comments'); ?>
 								</span><!-- .entry-meta -->
 
-							<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-								<?php endif; ?>
-							</div>
+						<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+						<button><?php echo 'Read Entry' ?></button>	
+						<?php endif; ?>
+						</div>
 					</li>
 						<?php endforeach; wp_reset_postdata(); ?>
 			 </ul>
@@ -59,6 +60,11 @@ get_header(); ?>
 		</section>
 
 <!-- Latest Adventures -->
+	<section class="main-journal container">
+		<div class="inhabitent-journals">
+		 <h1>Latest Adventures</h1>
+	 </div>
+	</section>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
