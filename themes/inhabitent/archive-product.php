@@ -42,7 +42,7 @@ get_header(); ?>
             </a>
           </div>
           <div class="product-info">
-            <p class="product-title"><?php echo get_the_title(); ?></p>
+            <span class="product-title"><?php echo get_the_title(); ?></span>
             <span class="price"><?php echo CFS()->get( 'price' ); ?></span>
           </div>
         </div>
