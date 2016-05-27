@@ -268,7 +268,7 @@ th {
   font-style: normal; }
 
 @font-face {
-  font-family: 'Novecento';
+  font-family: 'Novecentosanswide';
   src: url("../../fonts/Novecento/Novecentosanswide-DemiBold-webfont.eot");
   /* IE9 Compat Modes */
   src: url("../../fonts/Novecento/Novecentosanswide-DemiBold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/Novecento/Novecentosanswide-DemiBold-webfont.woff2") format("woff2"), url("../../fonts/Novecento/Novecentosanswide-DemiBold-webfont.woff") format("woff"), url("../../fonts/Novecento/Novecentosanswide-DemiBold-webfont.ttf") format("truetype"), url("../../fonts/Novecento/Novecentosanswide-DemiBold-webfont.svg") format("svg");
@@ -292,7 +292,7 @@ textarea {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: Novecento;
+  font-family: Novecentosanswide;
   clear: both;
   text-transform: uppercase; }
 
@@ -300,7 +300,8 @@ h1 {
   font-size: 2.5rem;
   font-weight: 400;
   text-align: center;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  margin-top: 0; }
 
 /* Copy */
 dfn, cite, em, i {
@@ -747,37 +748,9 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/*///////////// Header ///////////// */
-.site-header {
-  background-color: rgba(255, 255, 255, 0.85);
-  border-bottom: 1px solid #e1e1e1;
-  padding: .5rem 0;
-  position: fixed;
-  transition: top .5s linear;
-  width: 100%;
-  z-index: 10; }
-
-.site-header .container {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  text-transform: uppercase; }
-
-.site-header h1 {
-  background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
-  background-size: 50px 30px;
-  height: 30px;
-  margin: 0;
-  overflow: hidden;
-  text-indent: 100%;
-  width: 50px; }
-
 /*///////////// Front Page ///////////// */
 .front-area {
-  padding-top: 3rem;
+  padding-top: 0;
   margin-right: auto;
   margin-left: auto; }
 
@@ -794,7 +767,7 @@ object {
       justify-content: center;
   height: 100vh;
   width: 100%;
-  margin-bottom: 0; }
+  margin-bottom: 2rem; }
 
 .home-hero img {
   height: 280px;
@@ -873,7 +846,10 @@ object {
   margin-top: 0;
   margin-bottom: 1.5rem; }
 
-/*///////////// Shop Page ///////////// */
+/*///////////// Shop Page (Archive-Product) ///////////// */
+.archive-product-area {
+  padding-top: 4.5rem; }
+
 .shop-nav-container {
   display: -ms-flexbox;
   display: flex;
@@ -882,7 +858,7 @@ object {
   font-family: Novecento;
   font-size: 1.5rem; }
   .shop-nav-container a {
-    margin: 0 10px; }
+    margin: 0 1rem; }
 
 .page-header {
   border-bottom: 1px dashed #e1e1e1;
@@ -1020,7 +996,32 @@ h2 .entry-title {
   color: #fff;
   font-weight: bold; }
 
-/*///////////// Footer ///////////// */
+.site-header {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid #e1e1e1;
+  padding: .5rem 0;
+  position: fixed;
+  width: 100%;
+  z-index: 10; }
+
+.site-header .container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  text-transform: uppercase; }
+
+.site-header h1 {
+  background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
+  background-size: 50px 30px;
+  height: 30px;
+  margin: 0;
+  overflow: hidden;
+  text-indent: 100%;
+  width: 50px; }
+
 .site-footer {
   background-image: url(../../images/dark-wood.png);
   font-family: Novecento Sans Web, sans-serif;

@@ -67,7 +67,7 @@ function inhabitent_about_header() {
         $custom_css = "
               .about-header{
                         background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%),
-												url('$background_image') center center no-repeat;
+												url('$background_image') no-repeat center bottom;
 												background-size: cover;
                 }";
         wp_add_inline_style( 'inhbitent-style', $custom_css );

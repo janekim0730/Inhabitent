@@ -1,39 +1,9 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-
-/*///////////// Header ///////////// */
-.site-header{
-  background-color: hsla(0,0%,100%,.85);
-  border-bottom: 1px solid #e1e1e1;
-  padding: .5rem 0;
-  position: fixed;
-  transition: top .5s linear;
-  width: 100%;
-  z-index: 10;
-}
-
-.site-header .container{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-transform: uppercase;
-}
-
-.site-header h1{
-  background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
-  background-size: 50px 30px;
-  height: 30px;
-  margin: 0;
-  overflow: hidden;
-  text-indent: 100%;
-  width: 50px;
-}
-
-
 /*///////////// Front Page ///////////// */
 .front-area{
-  padding-top: 3rem;
+  padding-top: 0;
   margin-right: auto;
   margin-left: auto;
 }
@@ -48,7 +18,7 @@
   justify-content: center;
   height: 100vh;
   width: 100%;
-  margin-bottom: 0;
+  margin-bottom: 2rem;
 }
 
 .home-hero img{
@@ -145,7 +115,11 @@
 }
 
 
-/*///////////// Shop Page ///////////// */
+/*///////////// Shop Page (Archive-Product) ///////////// */
+.archive-product-area{
+  padding-top: 4.5rem;
+}
+
 .shop-nav-container{
   display: flex;
   justify-content: center;
@@ -153,7 +127,7 @@
   font-size: 1.5rem;
 
   a{
-    margin: 0 10px;
+    margin: 0 1rem;
   }
 }
 
@@ -292,9 +266,6 @@ h2 .entry-title{
 }
 
 
-
-
-
 /*///////////// About Page ///////////// */
 
 .about-content{
@@ -309,67 +280,4 @@ h2 .entry-title{
   height: 100vh;
   color: #fff;
   font-weight: bold;
-}
-
-
-/*///////////// Footer ///////////// */
-.site-footer{
-  background-image: url(../../images/dark-wood.png);
-  font-family: Novecento Sans Web, sans-serif;
-  font-weight: lighter;
-  color: #ffffff;
-}
-
-.footer-blocks {
-  display: flex;
-}
-
-.footer-block-item{
-  margin: 3rem 0;
-  padding-right: 1.5rem;
-  width: 25%;
-}
-
-.footer-block-item:last-child{
-  margin: 3rem 0;
-  padding-right: 1.5rem;
-  width: 50%;
-}
-
-.footer-blocks h3{
-  color: #d99054;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-}
-
-.contact a{
-
-  color: #ffffff;
-  text-decoration: none;
-
-  &:visited {
-    color: #ffffff;
-  }
-  &:hover,
-  &:focus,
-  &:active {
-    color: #ffffff;
-    text-decoration: underline;
-  }
-}
-
-.site-info{
-  padding: 1.5rem 0;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.text-logo{
-  margin-top: 1rem;
-  text-align: right;
-}
-
-.text-logo img{
-  max-width: 50%;
 }
