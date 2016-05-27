@@ -50,7 +50,7 @@ get_header(); ?>
 								</span><!-- .entry-meta -->
 
 						<?php the_title( sprintf( '<h2 class="journal-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-						<button><?php echo 'Read Entry' ?></button>
+						<button><a href="<?php echo esc_url( get_permalink() );?>">Read Entry</a></button>
 						<?php endif; ?>
 						</div>
 					</li>

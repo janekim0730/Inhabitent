@@ -27,7 +27,8 @@ get_header(); ?>
         <?php
            $args = array( 'post_type' => 'product',
                           'posts_per_page' => 16,
-												  'order' => 'ASC' );
+												  'order' => 'ASC',
+												  'orderby' => 'title' );
            $recent_products = get_posts( $args ); // returns an array of posts
         ?>
         <?php foreach ( $recent_products as $post ) : setup_postdata( $post ); ?>
