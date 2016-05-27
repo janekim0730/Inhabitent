@@ -20,7 +20,7 @@ get_header(); ?>
 						<?php foreach ($terms as $term) : ?>
 							<div class="product-type-wrapper">
 					    <img class="logo" src="<?php bloginfo('template_directory'); ?>/images/product-type-icons/<?php echo $term->slug ?>.svg" alt="product-type" />
-							<p><?php echo $term->description; ?></p>
+							<p class="shop-stuff-description"><?php echo $term->description; ?></p>
 							<a id="green-button" class="btn" href="<?php echo get_term_link($term, 'product-type') ?>"><?php echo $term-> name; ?> Stuff</a>
 						</div>
 						<?php endforeach; ?>
