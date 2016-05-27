@@ -8,24 +8,30 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div id="primary" class="single-product-area">
+		<main id="main" class="single-product-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
       <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-      	<header class="entry-header">
-      		<?php if ( has_post_thumbnail() ) : ?>
-      			<?php the_post_thumbnail( 'large' ); ?>
-      		<?php endif; ?>
 
-      		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+      		<div class="product-image-wrapper"><?php if ( has_post_thumbnail() ) : ?>
+      		<?php the_post_thumbnail( 'large' ); ?>
+					<?php endif; ?></div>
 
-      	</header><!-- .entry-header -->
-
-      	<div class="entry-content">
-          <?php echo CFS()->get( 'price' ); ?><!--Price-->
+      	<div class="product-content-wrapper">
+						<div class="single-product-header">
+							<?php the_title( '<h1 class="single-product-title">', '</h1>' ); ?>
+						</div><!-- .entry-header -->
+          <span class="single-price"><?php echo CFS()->get( 'price' ); ?></span><!--Price-->
       		<?php the_content(); ?>
+
+					<div class="social-buttons">
+						<button><i class="fa fa-facebook"></i> Like</button>
+						<button><i class="fa fa-twitter"></i> Tweet</button>
+						<button><i class="fa fa-pinterest"></i> Pin</button>
+
+					</div>
       	</div><!-- .entry-content -->
 
       </article><!-- #post-## -->

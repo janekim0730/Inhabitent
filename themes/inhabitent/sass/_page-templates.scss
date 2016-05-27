@@ -32,8 +32,8 @@
 
 
 /*///////////// Front Page ///////////// */
-.site-content{
-  padding-top: 50px;
+.front-area{
+  padding-top: 3rem;
   margin-right: auto;
   margin-left: auto;
 }
@@ -47,7 +47,8 @@
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  margin-bottom: 4rem;
+  width: 100%;
+  margin-bottom: 0;
 }
 
 .home-hero img{
@@ -57,7 +58,7 @@
 
 //Shop Stuff
 .shop-stuff{
-  margin-bottom: 4.5rem;
+  margin-bottom: 4rem;
 }
 
 .product-type-blocks{
@@ -82,6 +83,10 @@
     height: 70px;
     width: 70px;
   }
+}
+
+#green-button{
+  color: #fff;
 }
 
 
@@ -129,11 +134,11 @@
   padding: 0.75rem;
 }
 
-.entry-meta{
+.journal-meta{
   font-size: 0.75rem;
 }
 
-.entry-title{
+.journal-title{
   font-size: 1.5rem;
   margin-top: 0;
   margin-bottom: 1.5rem;
@@ -152,7 +157,7 @@
   }
 }
 
-.shop-header{
+.page-header{
   border-bottom: 1px dashed #e1e1e1;
   padding-bottom: 40px;
   margin-bottom: 40px;
@@ -173,23 +178,25 @@
 }
 
 .product-info{
-  font-size: .9rem;
   padding: .75rem 1rem;
 }
 
-.entry-title{
+.product-title{
   background: #fff;
   display: inline;
   font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.75;
   padding-right: .25rem;
   text-transform: none;
 }
 
-.entry-title:before{
+.product-title:before{
   float: left;
   width: 0;
   white-space: nowrap;
-  content: ".............";
+  content: "........";
 }
 
 .price{
@@ -199,12 +206,93 @@
 }
 
 
+/*///////////// Single Product Page ///////////// */
+.single-product-area{
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3rem;
+}
+
+.single-product-main{
+  margin-top: 3rem;
+}
+
+.single-product .hentry{
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-image-wrapper{
+  width: 48%;
+}
+
+.product-content-wrapper{
+  width: 48%;
+}
+
+.single-product-title{
+  margin-bottom: 1rem;
+  margin-top: 0;
+  line-height: 1;
+  text-align: left;
+  font-weight: 800;
+  color: #d99054;
+}
+
+.single-price{
+  font-family: Novecento, sans-serif;
+  font-size: 1.7rem;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+
+/*///////////// Journal Page ///////////// */
+.site-content{
+  display: flex;
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-area{
+  border-right: 1px solid #e1e1e1;
+  border-right: 5%;
+  width: 73%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.entry-header{
+  position: relative;
+}
+
+h2 .entry-title{
+  background-color: #248a83;
+  color: #fff;
+  font-size: 2.1rem;
+  padding: .75rem 1.5rem;
+  position: absolute;
+  margin-top: 2.25rem;
+  max-width: 75%;
+  top: 0;
+}
+
+.entry-meta{
+  background-color: #248a83;
+  color: #fff;
+  font-family: Novecento, sans-serif;;
+  font-size: 1rem;
+  text-transform: uppercase;
+  display: inline-block;
+  position: absolute;
+  padding: .35rem 1.3rem;
+  bottom: 0;
+}
 
 
 
-
-
-/*///////////// Blog Posts ///////////// */
 
 
 /*///////////// About Page ///////////// */

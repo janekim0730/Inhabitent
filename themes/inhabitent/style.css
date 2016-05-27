@@ -300,12 +300,9 @@ h1 {
   font-size: 2.5rem;
   font-weight: 400;
   text-align: center;
-  margin-bottom: 3rem; }
+  margin-bottom: 2rem; }
 
 /* Copy */
-p {
-  margin-bottom: 1.5rem; }
-
 dfn, cite, em, i {
   font-style: italic; }
 
@@ -394,9 +391,7 @@ dd {
 
 img {
   height: auto;
-  /* Make sure images are scaled correctly. */
-  max-width: 100%;
-  /* Adhere to container width. */ }
+  max-width: 100%; }
 
 table {
   margin: 0;
@@ -414,7 +409,8 @@ table {
 button,
 input[type="button"],
 input[type="reset"],
-input[type="submit"] {
+input[type="submit"],
+.read-more {
   background-color: rgba(248, 246, 246, 0);
   border: 1px solid #000;
   border-radius: 0;
@@ -429,7 +425,8 @@ input[type="submit"] {
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
-  input[type="submit"]:hover {
+  input[type="submit"]:hover,
+  .read-more:hover {
     background-color: #248a83;
     color: #fff; }
   button:active, button:focus,
@@ -438,8 +435,28 @@ input[type="submit"] {
   input[type="reset"]:active,
   input[type="reset"]:focus,
   input[type="submit"]:active,
-  input[type="submit"]:focus {
+  input[type="submit"]:focus,
+  .read-more:active,
+  .read-more:focus {
     background-color: #248a83;
+    color: #fff; }
+
+.btn {
+  background-color: #248a83;
+  color: #fff;
+  border-radius: 0;
+  cursor: poiter;
+  font-family: Novecento, sans-serif;
+  font-size: .9rem;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase; }
+  .btn:hover {
+    background-color: #1a6560;
+    color: #fff; }
+  .btn:active, .btn:focus {
+    background-color: #1a6560;
     color: #fff; }
 
 /* Fields */
@@ -614,10 +631,15 @@ a {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
-.widget {
-  margin: 0 0 1.5rem;
+.widget-area {
+  padding-left: 5%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 27%;
   /* Make sure select elements fit in widgets. */ }
-  .widget select {
+  .widget-area .widget-text {
+    margin: 0 0 3rem; }
+  .widget-area select {
     max-width: 100%; }
 
 /* Search widget. */
@@ -754,8 +776,8 @@ object {
   width: 50px; }
 
 /*///////////// Front Page ///////////// */
-.site-content {
-  padding-top: 50px;
+.front-area {
+  padding-top: 3rem;
   margin-right: auto;
   margin-left: auto; }
 
@@ -771,14 +793,15 @@ object {
   -ms-flex-pack: center;
       justify-content: center;
   height: 100vh;
-  margin-bottom: 4rem; }
+  width: 100%;
+  margin-bottom: 0; }
 
 .home-hero img {
   height: 280px;
   width: 280px; }
 
 .shop-stuff {
-  margin-bottom: 4.5rem; }
+  margin-bottom: 4rem; }
 
 .product-type-blocks {
   display: -ms-flexbox;
@@ -800,6 +823,9 @@ object {
   .product-type-wrapper .logo {
     height: 70px;
     width: 70px; }
+
+#green-button {
+  color: #fff; }
 
 .inhabitent-journals {
   margin-bottom: 4.5rem; }
@@ -839,10 +865,10 @@ object {
 .post-info-wrapper {
   padding: 0.75rem; }
 
-.entry-meta {
+.journal-meta {
   font-size: 0.75rem; }
 
-.entry-title {
+.journal-title {
   font-size: 1.5rem;
   margin-top: 0;
   margin-bottom: 1.5rem; }
@@ -858,7 +884,7 @@ object {
   .shop-nav-container a {
     margin: 0 10px; }
 
-.shop-header {
+.page-header {
   border-bottom: 1px dashed #e1e1e1;
   padding-bottom: 40px;
   margin-bottom: 40px; }
@@ -880,28 +906,104 @@ object {
   margin-bottom: 1.5rem; }
 
 .product-info {
-  font-size: .9rem;
   padding: .75rem 1rem; }
 
-.entry-title {
+.product-title {
   background: #fff;
   display: inline;
   font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.75;
   padding-right: .25rem;
   text-transform: none; }
 
-.entry-title:before {
+.product-title:before {
   float: left;
   width: 0;
   white-space: nowrap;
-  content: "............."; }
+  content: "........"; }
 
 .price {
   float: right;
   padding-left: .25rem;
   background: #fff; }
 
-/*///////////// Blog Posts ///////////// */
+/*///////////// Single Product Page ///////////// */
+.single-product-area {
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3rem; }
+
+.single-product-main {
+  margin-top: 3rem; }
+
+.single-product .hentry {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.product-image-wrapper {
+  width: 48%; }
+
+.product-content-wrapper {
+  width: 48%; }
+
+.single-product-title {
+  margin-bottom: 1rem;
+  margin-top: 0;
+  line-height: 1;
+  text-align: left;
+  font-weight: 800;
+  color: #d99054; }
+
+.single-price {
+  font-family: Novecento, sans-serif;
+  font-size: 1.7rem;
+  margin-top: 0;
+  text-transform: uppercase; }
+
+/*///////////// Journal Page ///////////// */
+.site-content {
+  display: -ms-flexbox;
+  display: flex;
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.content-area {
+  border-right: 1px solid #e1e1e1;
+  border-right: 5%;
+  width: 73%;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+.entry-header {
+  position: relative; }
+
+h2 .entry-title {
+  background-color: #248a83;
+  color: #fff;
+  font-size: 2.1rem;
+  padding: .75rem 1.5rem;
+  position: absolute;
+  margin-top: 2.25rem;
+  max-width: 75%;
+  top: 0; }
+
+.entry-meta {
+  background-color: #248a83;
+  color: #fff;
+  font-family: Novecento, sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  display: inline-block;
+  position: absolute;
+  padding: .35rem 1.3rem;
+  bottom: 0; }
+
 /*///////////// About Page ///////////// */
 .about-content {
   margin: 3rem auto;

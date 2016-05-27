@@ -7,7 +7,8 @@
 button,
 input[type="button"],
 input[type="reset"],
-input[type="submit"] {
+input[type="submit"],
+.read-more {
 	background-color: rgba(248, 246, 246, 0);
 	border: 1px solid #000;
 	border-radius: 0;
@@ -28,6 +29,30 @@ input[type="submit"] {
 	&:active,
 	&:focus {
 	 background-color: #248a83;
+	 color: #fff;
+	}
+}
+
+.btn {
+	background-color: #248a83;
+	color: #fff;
+	border-radius: 0;
+	cursor: poiter;
+	font-family: Novecento, sans-serif;
+	font-size: .9rem;
+	line-height: 1;
+	padding: .75rem 1.5rem;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	&:hover {
+   background-color: #1a6560;
+	 color: #fff;
+ 	}
+
+	&:active,
+	&:focus {
+	 background-color: #1a6560;
 	 color: #fff;
 	}
 }

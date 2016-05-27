@@ -3,7 +3,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="front-area">
 		<main id="main" class="site-main" role="main">
 
 <!-- Hero Image -->
@@ -21,7 +21,7 @@ get_header(); ?>
 							<div class="product-type-wrapper">
 					    <img class="logo" src="<?php bloginfo('template_directory'); ?>/images/product-type-icons/<?php echo $term->slug ?>.svg" alt="product-type" />
 							<p><?php echo $term->description; ?></p>
-							<a class="btn" href="<?php echo get_term_link($term, 'product-type') ?>"><?php echo $term-> name; ?> Stuff</a>
+							<a id="green-button" class="btn" href="<?php echo get_term_link($term, 'product-type') ?>"><?php echo $term-> name; ?> Stuff</a>
 						</div>
 						<?php endforeach; ?>
 				</div>
@@ -45,12 +45,12 @@ get_header(); ?>
 							<?php endif; ?>
 						</div>
 							<div class="post-info-wrapper">
-								<span class="entry-meta"><?php if ( 'post' === get_post_type() ) : ?>
+								<span class="journal-meta"><?php if ( 'post' === get_post_type() ) : ?>
 									<?php red_starter_posted_on(); ?> / <?php comments_number('0 Comments', '1 Comment', '% Comments'); ?>
 								</span><!-- .entry-meta -->
 
-						<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-						<button><?php echo 'Read Entry' ?></button>	
+						<?php the_title( sprintf( '<h2 class="journal-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+						<button><?php echo 'Read Entry' ?></button>
 						<?php endif; ?>
 						</div>
 					</li>

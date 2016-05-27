@@ -7,16 +7,31 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div id="primary" class="taxonomy-area">
+    <div class="container">
+  		<main id="main" class="site-main" role="main">
+        <h1 class="page-header"><?php single_term_title(); ?></h1>
 
-			<?php while ( have_posts() ) : the_post(); ?>
+        <p><?php echo term_description(); ?></p>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
-			<?php endwhile; // End of the loop. ?>
+  			<?php while ( have_posts() ) : the_post(); ?>
+          <?php if ( has_post_thumbnail() ) : ?>
+            <?php the_post_thumbnail( 'large' ); ?>
+          <?php endif; ?>
+          <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+            <div>
+          	<header class="entry-header">
+          		<?php the_title( '<p class="entry-title">', '</p>' ); ?>
+          	</header><!-- .entry-header -->
+            <span class="price"><?php echo CFS()->get( 'price' ); ?></span>
+          	</div><!-- .entry-content -->
+          </article><!-- #post-## -->
 
-		</main><!-- #main -->
+  			<?php endwhile; // End of the loop. ?>
+
+  		</main><!-- #main -->
+    </div>
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>

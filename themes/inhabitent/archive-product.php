@@ -8,10 +8,10 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area container">
+	<div id="primary" class="archive-product-area container">
 		<main id="main" class="site-main" role="main">
 
-	<div class="shop-header">
+	<div class="page-header">
     <h1>shop stuff</h1>
     <div class="shop-nav-container">
       <nav class="shop-nav">
@@ -26,7 +26,8 @@ get_header(); ?>
       <div class="product-grid">
         <?php
            $args = array( 'post_type' => 'product',
-                          'posts_per_page' => 16);
+                          'posts_per_page' => 16,
+												  'order' => 'ASC' );
            $recent_products = get_posts( $args ); // returns an array of posts
         ?>
         <?php foreach ( $recent_products as $post ) : setup_postdata( $post ); ?>
@@ -40,7 +41,7 @@ get_header(); ?>
             </a>
           </div>
           <div class="product-info">
-            <p class="entry-title"><?php echo get_the_title(); ?></p>
+            <p class="product-title"><?php echo get_the_title(); ?></p>
             <span class="price"><?php echo CFS()->get( 'price' ); ?></span>
           </div>
         </div>
