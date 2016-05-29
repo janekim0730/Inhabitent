@@ -9,7 +9,7 @@
 get_header(); ?>
 
 	<div id="primary" class="archive-product-area container">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="sites-main" role="main">
 
 			<div class="page-header">
 		    <h1>shop stuff</h1>

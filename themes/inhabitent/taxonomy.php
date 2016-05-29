@@ -9,7 +9,7 @@ get_header(); ?>
 
 <div id="primary" class="taxonomy-area">
 	<div class="container">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="sites-main" role="main">
 
 		<div class="page-header">
 			<h1 class="page-header-title"><?php single_term_title(); ?></h1>

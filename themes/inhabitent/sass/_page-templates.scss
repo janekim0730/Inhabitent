@@ -112,10 +112,38 @@
 }
 
 
-/*///////////// Journal Page ///////////// */
+/*///////////// Journal Page and Find Us Page ///////////// */
+.entry-title{
+  text-align: left;
+}
 
+.google-map{
+  margin-bottom: 2rem;
+}
+.content-area{
+  width: 1120px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3rem;
+}
 
+.site-main{
+  border-right: 1px solid #e1e1e1;
+  padding-right: 3rem;
+  width: 73%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
 
+.widget-area{
+  width: 27%;
+  padding-left: 3rem;
+}
+
+.required{
+  color: #d99054;
+}
 
 
 /*///////////// Single Blog Posts (single journal) ///////////// */
@@ -149,10 +177,4 @@
 
 .our-story{
   margin-bottom: 2rem;
-}
-
-/*///////////// Find Us Page ///////////// */
-
-.required{
-  color: #d99054;
 }

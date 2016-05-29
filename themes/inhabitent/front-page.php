@@ -4,7 +4,7 @@
 get_header(); ?>
 
 	<div id="primary" class="front-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="sites-main" role="main">
 
 <!-- Hero Image -->
 		<section class="home-hero">

@@ -38,5 +38,3 @@
 					</nav><!-- #site-navigation -->
 				</div>
 			</header><!-- #masthead -->
-
-			<div id="content" class="front-content">

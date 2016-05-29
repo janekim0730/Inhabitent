@@ -85,7 +85,8 @@ a {
 
 a:active,
 a:hover {
-  outline: 0; }
+  outline: 0;
+  text-decoration: none; }
 
 abbr[title] {
   border-bottom: 1px dotted; }
@@ -311,7 +312,7 @@ h2,
   margin-bottom: 1.5rem; }
 
 h3 {
-  font-weight: normal; }
+  font-weight: 300; }
 
 /* Copy */
 dfn, cite, em, i {
@@ -392,7 +393,8 @@ li > ul,
 li > ol {
   margin-bottom: 0;
   margin-left: 0;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  list-style-type: none; }
 
 dt {
   font-weight: bold; }
@@ -666,13 +668,30 @@ a {
   padding-left: 5%;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  width: 27%;
-  /* Make sure select elements fit in widgets. */ }
-  .widget-area .widget-text {
-    margin: 0 0 3rem; }
-  .widget-area .day-of-week {
-    font-weight: bold; }
-  .widget-area select {
+  width: 27%; }
+
+.widget-title {
+  font-size: 1.5rem;
+  margin-top: 3rem; }
+
+.contact-widget i {
+  line-height: 1.8;
+  margin-right: .5rem;
+  width: 17px; }
+
+.contact-meta {
+  display: -ms-flexbox;
+  display: flex; }
+
+.day-of-week {
+  font-weight: 800;
+  margin-right: .5rem; }
+
+.widget_archive ul {
+  padding-left: 0; }
+  .widget_archive ul h2 {
+    font-size: 1.5rem; }
+  .widget_archive ul select {
     max-width: 100%; }
 
 /* Search widget. */
@@ -875,7 +894,35 @@ object {
   margin-top: 0;
   text-transform: uppercase; }
 
-/*///////////// Journal Page ///////////// */
+/*///////////// Journal Page and Find Us Page ///////////// */
+.entry-title {
+  text-align: left; }
+
+.google-map {
+  margin-bottom: 2rem; }
+
+.content-area {
+  width: 1120px;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3rem; }
+
+.site-main {
+  border-right: 1px solid #e1e1e1;
+  padding-right: 3rem;
+  width: 73%;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+.widget-area {
+  width: 27%;
+  padding-left: 3rem; }
+
+.required {
+  color: #d99054; }
+
 /*///////////// Single Blog Posts (single journal) ///////////// */
 /*///////////// About Page ///////////// */
 .about-content {
@@ -899,10 +946,6 @@ object {
 
 .our-story {
   margin-bottom: 2rem; }
-
-/*///////////// Find Us Page ///////////// */
-.required {
-  color: #d99054; }
 
 .site-header {
   background-color: rgba(255, 255, 255, 0.8);
@@ -932,8 +975,6 @@ object {
 
 .site-footer {
   background-image: url(../../images/dark-wood.png);
-  font-family: Novecento Sans Web, sans-serif;
-  font-weight: lighter;
   color: #ffffff; }
 
 .footer-blocks {
@@ -976,6 +1017,10 @@ object {
 
 .text-logo img {
   max-width: 50%; }
+
+.contact-meta i {
+  margin-right: .6rem;
+  font-size: 1.3rem; }
 
 .front-area {
   padding-top: 0;
