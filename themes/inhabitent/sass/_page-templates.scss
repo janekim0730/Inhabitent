@@ -182,9 +182,53 @@
 
 /*///////////// Single Blog Posts (single journal) ///////////// */
 
+.entry-footer{
+  font-family: Novecento, sans-serif;
+  text-transform: uppercase;
+}
 
+.cat-links{
+  margin-right: 1rem;
+}
 
+.social-buttons{
+  margin-top: 1rem;
+}
 
+.children li {
+    border-top: 1px solid #e1e1e1;
+}
+
+.comment{
+  padding-top: 1.5rem;
+}
+
+.comment-body{
+  padding-bottom: 1.5rem;
+}
+
+.comment-list>li {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.comment-reply-title{
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.comment-form{
+
+  label{
+    font-family: Novecento, sans-serif;
+    text-transform: uppercase;
+  }
+  textarea{
+    margin-top: 1rem;
+    background-color: #f4f4f4;
+    border-color: #e1e1e1;
+    color: #666;
+  }
+}
 
 /*///////////// About Page ///////////// */
 .about-content{

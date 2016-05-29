@@ -132,3 +132,13 @@ add_action('pre_get_posts', 'inhabitent_filter_product_query' );
 
  remove_filter( 'get_the_excerpt', 'wp_trim_excerpt' );
  add_filter( 'get_the_excerpt', 'red_wp_trim_excerpt' );
+
+ /**
+  * adding custom JavaScript file to searchbox
+  */
+ function inhabitent_javascript_scripts() {
+
+ 	wp_enqueue_script( 'inhabitent-custom_js', get_template_directory_uri() . '/js/custom.js');
+
+ }
+ add_action( 'wp_enqueue_scripts', 'inhabitent_javascript_scripts' );

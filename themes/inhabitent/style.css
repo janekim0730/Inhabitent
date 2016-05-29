@@ -470,7 +470,8 @@ input[type="submit"],
     color: #fff; }
 
 .read-more,
-.read-entry {
+.read-entry,
+.single-post-social {
   background-color: transparent;
   border: 1px solid #000;
   border-radius: 0;
@@ -483,12 +484,15 @@ input[type="submit"],
   text-decoration: none;
   text-transform: uppercase; }
   .read-more:hover,
-  .read-entry:hover {
+  .read-entry:hover,
+  .single-post-social:hover {
     background-color: #248a83;
     color: #fff; }
   .read-more:active, .read-more:focus,
   .read-entry:active,
-  .read-entry:focus {
+  .read-entry:focus,
+  .single-post-social:active,
+  .single-post-social:focus {
     background-color: #248a83;
     color: #fff; }
 
@@ -949,6 +953,42 @@ object {
     bottom: .5rem; }
 
 /*///////////// Single Blog Posts (single journal) ///////////// */
+.entry-footer {
+  font-family: Novecento, sans-serif;
+  text-transform: uppercase; }
+
+.cat-links {
+  margin-right: 1rem; }
+
+.social-buttons {
+  margin-top: 1rem; }
+
+.children li {
+  border-top: 1px solid #e1e1e1; }
+
+.comment {
+  padding-top: 1.5rem; }
+
+.comment-body {
+  padding-bottom: 1.5rem; }
+
+.comment-list > li {
+  border-bottom: 1px solid #e1e1e1; }
+
+.comment-reply-title {
+  font-weight: bold;
+  font-size: 1.8rem; }
+
+.comment-form label {
+  font-family: Novecento, sans-serif;
+  text-transform: uppercase; }
+
+.comment-form textarea {
+  margin-top: 1rem;
+  background-color: #f4f4f4;
+  border-color: #e1e1e1;
+  color: #666; }
+
 /*///////////// About Page ///////////// */
 .about-content {
   margin: 3rem auto;
@@ -1143,3 +1183,28 @@ object {
   font-size: 1.5rem;
   margin-top: 0;
   margin-bottom: 1.5rem; }
+
+.header-search {
+  padding-left: 1.5rem; }
+
+.search-form fieldset {
+  margin: 0;
+  padding: 0;
+  border: none; }
+
+.search-field {
+  display: none;
+  outline-line: none;
+  height: 20px;
+  width: auto; }
+
+.search-submit {
+  color: #248a83;
+  display: inline-block;
+  cursor: pointer; }
+
+.header-search {
+  display: inline-block; }
+
+.menu-main-navigation-container {
+  display: inline-block; }

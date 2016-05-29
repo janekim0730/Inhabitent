@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying search results pages.
+ * Template Name: Search Result Template
  *
  * @package RED_Starter_Theme
  */
@@ -11,7 +11,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
-<?php echo "Hi~~~~"?>
+
 			<header class="search-header">
 				<h1 class="search-title"><?php printf( esc_html( 'Search Results for: %s' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 			</header><!-- .page-header -->
