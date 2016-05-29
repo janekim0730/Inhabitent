@@ -1,9 +1,9 @@
 <?php
 /**
- * The template for displaying all single posts.
+ * Template Name: Single Product Template
  *
  * @package RED_Starter_Theme
- * Template Name: Single Product Template
+ *
  */
 
 get_header(); ?>

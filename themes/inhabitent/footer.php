@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying the footer.
+ * Template Name: Footer Template
  *
  * @package RED_Starter_Theme
  */

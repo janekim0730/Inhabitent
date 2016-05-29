@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all single posts.
+ * Template Name: Single Post Template
  *
  * @package RED_Starter_Theme
  */

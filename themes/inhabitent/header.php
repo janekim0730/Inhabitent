@@ -1,6 +1,6 @@
 <?php
 /**
- * The header for our theme.
+ * Template Name: Header Template
  *
  * @package RED_Starter_Theme
  */

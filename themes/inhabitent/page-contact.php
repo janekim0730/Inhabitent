@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages.
+ * Template Name: Contact Page Template
  *
  * @package RED_Starter_Theme
  */
@@ -21,5 +21,5 @@ get_header(); ?>
     <?php get_sidebar(); ?>
 
 	</div>
-  
+
     <?php get_footer(); ?>

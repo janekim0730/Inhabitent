@@ -145,6 +145,40 @@
   color: #d99054;
 }
 
+//Journal page
+.entry-header{
+  position: relative;
+
+  h2{
+    background-color: #248a83;
+    color: #fff;
+    max-width: 75%;
+    padding: .75rem 1.5rem;
+    position: absolute;
+    top: 0;
+    line-height: 1.2;
+  }
+
+  a{
+    color: #fff;
+  }
+
+  a:hover{
+    color: #f0e4d1;
+  }
+
+  .entry-meta{
+    background-color: #248a83;
+    color: #fff;
+    font-size: 1rem;
+    font-family: Novecento;
+    padding: .3rem 1rem;
+    max-width: 55%;
+    position: absolute;
+    right: 0;
+    bottom: .5rem;
+  }
+}
 
 /*///////////// Single Blog Posts (single journal) ///////////// */
 
@@ -160,6 +194,7 @@
   h1{
     font-size: 2rem;
   }
+
 }
 
 .about-header{

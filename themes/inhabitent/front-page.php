@@ -1,6 +1,9 @@
 <?php
-/*  @package RED_Starter_Theme  */
-
+/**
+ * Template Name: Front-page Template
+ *
+ * @package RED_Starter_Theme
+ */
 get_header(); ?>
 
 	<div id="primary" class="front-area">

@@ -1,9 +1,9 @@
 <?php
 /**
- * The template for displaying archive pages.
+ * Template Name: Archive Product Template
  *
  * @package RED_Starter_Theme
- * Template Name: Archive Product Template
+ *
  */
 
 get_header(); ?>

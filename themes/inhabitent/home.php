@@ -1,7 +1,7 @@
 <?php
 /**
- * The main template file.
  * Template Name: BlogPosts
+ *
  * @package RED_Starter_Theme
  */
 
