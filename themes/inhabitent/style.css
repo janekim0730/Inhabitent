@@ -268,7 +268,7 @@ th {
   font-style: normal; }
 
 @font-face {
-  font-family: 'Novecentosanswide';
+  font-family: 'Novecento';
   src: url("../../fonts/Novecento/Novecentosanswide-DemiBold-webfont.eot");
   /* IE9 Compat Modes */
   src: url("../../fonts/Novecento/Novecentosanswide-DemiBold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/Novecento/Novecentosanswide-DemiBold-webfont.woff2") format("woff2"), url("../../fonts/Novecento/Novecentosanswide-DemiBold-webfont.woff") format("woff"), url("../../fonts/Novecento/Novecentosanswide-DemiBold-webfont.ttf") format("truetype"), url("../../fonts/Novecento/Novecentosanswide-DemiBold-webfont.svg") format("svg");
@@ -280,7 +280,6 @@ th {
 # Typography
 --------------------------------------------------------------*/
 body,
-button,
 input,
 select,
 textarea {
@@ -292,9 +291,10 @@ textarea {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: Novecentosanswide;
+  font-family: Novecento, sans-serif;
   clear: both;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: 2px; }
 
 h1 {
   font-size: 2.5rem;
@@ -302,6 +302,16 @@ h1 {
   text-align: center;
   margin-bottom: 2rem;
   margin-top: 0; }
+
+h2,
+.entry-title {
+  font-weight: bold;
+  color: #2f1339;
+  font-size: 2.1rem;
+  margin-bottom: 1.5rem; }
+
+h3 {
+  font-weight: normal; }
 
 /* Copy */
 dfn, cite, em, i {
@@ -411,37 +421,6 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"],
-.read-more {
-  background-color: rgba(248, 246, 246, 0);
-  border: 1px solid #000;
-  border-radius: 0;
-  color: #000;
-  cursor: poiter;
-  font-family: Novecento, sans-serif;
-  font-size: .9rem;
-  line-height: 1;
-  padding: .75rem 1.5rem;
-  text-decoration: none;
-  text-transform: uppercase; }
-  button:hover,
-  input[type="button"]:hover,
-  input[type="reset"]:hover,
-  input[type="submit"]:hover,
-  .read-more:hover {
-    background-color: #248a83;
-    color: #fff; }
-  button:active, button:focus,
-  input[type="button"]:active,
-  input[type="button"]:focus,
-  input[type="reset"]:active,
-  input[type="reset"]:focus,
-  input[type="submit"]:active,
-  input[type="submit"]:focus,
-  .read-more:active,
-  .read-more:focus {
-    background-color: #248a83;
-    color: #fff; }
-
 .btn {
   background-color: #248a83;
   color: #fff;
@@ -452,12 +431,63 @@ input[type="submit"],
   line-height: 1;
   padding: .75rem 1.5rem;
   text-decoration: none;
-  text-transform: uppercase; }
-  .btn:hover {
+  text-transform: uppercase;
+  border: none; }
+  button:hover,
+  button a:hover,
+  input[type="button"]:hover,
+  input[type="button"] a:hover,
+  input[type="reset"]:hover,
+  input[type="reset"] a:hover,
+  input[type="submit"]:hover,
+  input[type="submit"] a:hover,
+  .btn:hover,
+  .btn a:hover {
     background-color: #1a6560;
     color: #fff; }
-  .btn:active, .btn:focus {
+  button:active,
+  button a:active, button:focus,
+  button a:focus,
+  input[type="button"]:active,
+  input[type="button"] a:active,
+  input[type="button"]:focus,
+  input[type="button"] a:focus,
+  input[type="reset"]:active,
+  input[type="reset"] a:active,
+  input[type="reset"]:focus,
+  input[type="reset"] a:focus,
+  input[type="submit"]:active,
+  input[type="submit"] a:active,
+  input[type="submit"]:focus,
+  input[type="submit"] a:focus,
+  .btn:active,
+  .btn a:active,
+  .btn:focus,
+  .btn a:focus {
     background-color: #1a6560;
+    color: #fff; }
+
+.read-more,
+.read-entry {
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 0;
+  color: #000;
+  cursor: poiter;
+  font-family: Novecento, sans-serif;
+  font-size: .9rem;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase; }
+  .read-more:hover,
+  .read-entry:hover {
+    background-color: #248a83;
+    color: #fff; }
+  .read-more:active, .read-more:focus,
+  .read-entry:active,
+  .read-entry:focus {
+    background-color: #248a83;
     color: #fff; }
 
 /* Fields */
@@ -640,6 +670,8 @@ a {
   /* Make sure select elements fit in widgets. */ }
   .widget-area .widget-text {
     margin: 0 0 3rem; }
+  .widget-area .day-of-week {
+    font-weight: bold; }
   .widget-area select {
     max-width: 100%; }
 
@@ -868,6 +900,10 @@ object {
 .our-story {
   margin-bottom: 2rem; }
 
+/*///////////// Find Us Page ///////////// */
+.required {
+  color: #d99054; }
+
 .site-header {
   background-color: rgba(255, 255, 255, 0.8);
   border-bottom: 1px solid #e1e1e1;
@@ -981,7 +1017,7 @@ object {
   -ms-flex: 0 1 23.5%;
       flex: 0 1 23.5%;
   max-width: 23.5%;
-  padding: 0.75rem;
+  padding: 1rem 1rem 1.5rem 1rem;
   text-align: center; }
   .product-type-wrapper:hover {
     border-color: #d99054; }
@@ -991,9 +1027,6 @@ object {
 
 .shop-stuff-description {
   font-size: 14px; }
-
-#green-button {
-  color: #fff; }
 
 .inhabitent-journals {
   margin-bottom: 4.5rem; }

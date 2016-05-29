@@ -7,10 +7,10 @@
 
 get_header(); ?>
 
-<div class="container">
-	<div id="primary" class="content-area">
+
+	<div id="primary" class="content-area container">
 		<main id="main" class="site-main" role="main">
-			
+
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content' ); ?>
@@ -18,10 +18,9 @@ get_header(); ?>
 			<?php endwhile; ?>
 
 		</main><!-- #main -->
-	</div><!-- #primary -->
 
-		<div class="sidebar-widget">
-		<?php get_sidebar(); ?>
-		</div>
-</div>
-<?php get_footer(); ?>
+			<?php get_sidebar(); ?>
+
+  </div><!-- #primary -->
+
+	  	<?php get_footer(); ?>

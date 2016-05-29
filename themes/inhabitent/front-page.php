@@ -21,7 +21,7 @@ get_header(); ?>
 							<div class="product-type-wrapper">
 					    <img class="logo" src="<?php bloginfo('template_directory'); ?>/images/product-type-icons/<?php echo $term->slug ?>.svg" alt="product-type" />
 							<p class="shop-stuff-description"><?php echo $term->description; ?></p>
-							<a id="green-button" class="btn" href="<?php echo get_term_link($term, 'product-type') ?>"><?php echo $term-> name; ?> Stuff</a>
+							<a href="<?php echo get_term_link($term, 'product-type') ?>"><button><?php echo $term-> name; ?> Stuff</button></a>
 						</div>
 						<?php endforeach; ?>
 				</div>
@@ -50,7 +50,7 @@ get_header(); ?>
 								</span><!-- .entry-meta -->
 
 						<?php the_title( sprintf( '<h2 class="journal-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-						<button><a href="<?php echo esc_url( get_permalink() );?>">Read Entry</a></button>
+						<a href="<?php echo esc_url( get_permalink() );?>"><button class="read-entry">Read Entry</button></a>
 						<?php endif; ?>
 						</div>
 					</li>

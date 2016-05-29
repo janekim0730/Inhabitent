@@ -20,7 +20,6 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<div class="product-grid-item">
-
 					<div class="thumbnail-wrapper">
 						<?php if ( has_post_thumbnail() ) : ?>
 						<?php the_post_thumbnail( 'large' ); ?>
@@ -31,7 +30,6 @@ get_header(); ?>
 						<span class="product-title"><?php echo get_the_title(); ?></span>
 						<span class="price"><?php echo CFS()->get( 'price' ); ?></span>
 					</div>
-
 				</div>
 
 				<?php endwhile; // End of the loop. ?>
