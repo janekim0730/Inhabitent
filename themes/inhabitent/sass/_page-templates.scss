@@ -128,7 +128,8 @@
   padding-top: 3rem;
 }
 
-.site-main{
+.site-main,
+.search-main{
   border-right: 1px solid #e1e1e1;
   padding-right: 3rem;
   width: 73%;
@@ -146,7 +147,8 @@
 }
 
 //Journal page
-.entry-header{
+.blog .entry-header,
+.single-post .entry-heade{
   position: relative;
 
   h2{
@@ -274,4 +276,32 @@
   font-size: 2.3rem;
   font-weight: bold;
   text-align: left;
+}
+
+/*///////////// Search Result Page ///////////// */
+.search-header{
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.search-title{
+  text-align: left;
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.search-pagination .page-numbers.current {
+    background-color: #77777c
+}
+
+.search-pagination .page-numbers{
+  background-color: #248a83;
+  padding: .5rem 1rem;
+  font-family: Novecento, sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+
+}
+
+.search-pagination a:hover, a:active{
+  background-color: #2f1339;
 }

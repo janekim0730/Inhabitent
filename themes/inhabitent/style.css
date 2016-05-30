@@ -915,7 +915,8 @@ object {
   margin-right: auto;
   padding-top: 3rem; }
 
-.site-main {
+.site-main,
+.search-main {
   border-right: 1px solid #e1e1e1;
   padding-right: 3rem;
   width: 73%;
@@ -929,9 +930,11 @@ object {
 .required {
   color: #d99054; }
 
-.entry-header {
+.blog .entry-header,
+.single-post .entry-heade {
   position: relative; }
-  .entry-header h2 {
+  .blog .entry-header h2,
+  .single-post .entry-heade h2 {
     background-color: #248a83;
     color: #fff;
     max-width: 75%;
@@ -939,11 +942,14 @@ object {
     position: absolute;
     top: 0;
     line-height: 1.2; }
-  .entry-header a {
+  .blog .entry-header a,
+  .single-post .entry-heade a {
     color: #fff; }
-  .entry-header a:hover {
+  .blog .entry-header a:hover,
+  .single-post .entry-heade a:hover {
     color: #f0e4d1; }
-  .entry-header .entry-meta {
+  .blog .entry-header .entry-meta,
+  .single-post .entry-heade .entry-meta {
     background-color: #248a83;
     color: #fff;
     font-size: 1rem;
@@ -1026,6 +1032,28 @@ object {
   font-size: 2.3rem;
   font-weight: bold;
   text-align: left; }
+
+/*///////////// Search Result Page ///////////// */
+.search-header {
+  border-bottom: 1px solid #e1e1e1; }
+
+.search-title {
+  text-align: left;
+  font-size: 2.3rem;
+  font-weight: bold; }
+
+.search-pagination .page-numbers.current {
+  background-color: #77777c; }
+
+.search-pagination .page-numbers {
+  background-color: #248a83;
+  padding: .5rem 1rem;
+  font-family: Novecento, sans-serif;
+  text-transform: uppercase;
+  color: #fff; }
+
+.search-pagination a:hover, a:active {
+  background-color: #2f1339; }
 
 .site-header {
   background-color: rgba(255, 255, 255, 0.8);

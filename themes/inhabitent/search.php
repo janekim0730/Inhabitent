@@ -8,8 +8,8 @@
 get_header(); ?>
 
 	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-<?php echo ('hi'); ?>
+		<main id="main" class="search-main" role="main">
+
 		<?php if ( have_posts() ) : ?>
 
 			<header class="search-header">
@@ -31,9 +31,10 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-		</main><!-- #main -->
+	</main><!-- #main -->
 
 <?php get_sidebar(); ?>
+
 </section><!-- #primary -->
 
 <?php get_footer(); ?>
