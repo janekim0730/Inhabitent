@@ -1014,6 +1014,19 @@ object {
 .our-story {
   margin-bottom: 2rem; }
 
+/*///////////// 404 Page ///////////// */
+.widgettitle {
+  font-size: 1.5rem; }
+
+.widget_recent_entries ul,
+.widget_categories ul {
+  padding-left: 0; }
+
+.error-title {
+  font-size: 2.3rem;
+  font-weight: bold;
+  text-align: left; }
+
 .site-header {
   background-color: rgba(255, 255, 255, 0.8);
   border-bottom: 1px solid #e1e1e1;

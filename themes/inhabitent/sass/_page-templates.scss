@@ -257,3 +257,21 @@
 .our-story{
   margin-bottom: 2rem;
 }
+
+/*///////////// 404 Page ///////////// */
+.widgettitle{
+  font-size: 1.5rem;
+}
+
+.widget_recent_entries,
+.widget_categories{
+	ul{
+		padding-left: 0;
+	}
+}
+
+.error-title{
+  font-size: 2.3rem;
+  font-weight: bold;
+  text-align: left;
+}
