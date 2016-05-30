@@ -36,7 +36,6 @@ a {
 		display: none;
 		list-style: none;
 		margin: 0;
-		padding-left: 1.5rem;
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -69,20 +68,22 @@ a {
 			a:hover,
 			a.focus {
 			}
-		}
+	}
 
 		li:hover > ul,
 		li.focus > ul {
 			left: auto;
 		}
 	}
+
 	li {
-		padding-left: 1.5rem;
+		padding-left: 1rem;
 		float: left;
 		position: relative;
 
 		&:hover > a,
 		&.focus > a {
+			color: #2f1339;
 		}
 	}
 	a {
