@@ -63,14 +63,12 @@ get_header(); ?>
 		</section>
 
 <!-- Latest Adventures -->
-	<section class="main-journal container">
-		<div class="inhabitent-journals">
+	<section class="main-adventure container">
+		<div class="inhabitent-adventures">
 		 <h1>Latest Adventures</h1>
-	 </div>
-	</section>
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
 
 <?php get_footer(); ?>
