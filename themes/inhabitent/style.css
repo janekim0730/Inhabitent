@@ -427,9 +427,9 @@ input[type="submit"],
   background-color: #248a83;
   color: #fff;
   border-radius: 0;
-  cursor: poiter;
+  cursor: pointer;
   font-family: Novecento, sans-serif;
-  font-size: .9rem;
+  font-size: 1rem;
   line-height: 1;
   padding: .75rem 1.5rem;
   text-decoration: none;
@@ -1287,7 +1287,7 @@ object {
 
 /*///// Latest Adventures /////*/
 .inhabitent-adventures {
-  margin-bottom: 2.5rem; }
+  margin-bottom: 3rem; }
 
 .latest-adventures {
   width: 1120px;
@@ -1296,7 +1296,8 @@ object {
   -ms-flex-pack: justify;
       justify-content: space-between;
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap; }
+      flex-wrap: nowrap;
+  margin-bottom: 1rem; }
 
 .header-one {
   display: -ms-flexbox;
@@ -1335,8 +1336,8 @@ object {
       flex-direction: column;
   position: absolute;
   z-index: 10;
-  margin: 2rem;
-  width: 250px; }
+  margin: 1.5rem;
+  width: 235px; }
   .header-three .title-three {
     font-size: 1.5rem;
     line-height: 1.5;
@@ -1350,8 +1351,8 @@ object {
       flex-direction: column;
   position: absolute;
   z-index: 10;
-  margin: 2rem 1rem;
-  width: 250px; }
+  margin: 1.5rem;
+  width: 235px; }
   .header-four .title-four {
     font-size: 1.5rem;
     line-height: 1.5;

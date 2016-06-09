@@ -102,7 +102,9 @@ get_header(); ?>
 			</div> <!--bottom-box-->
 		</div> <!--right-box-->
 	</div><!--latest-adventures-->
-		
+
+		<a href="<?php echo get_post_type_archive_link( 'adventure' ); ?>"><button>More Adventures</button></a>
+
 		</div>
 	</section>
 
