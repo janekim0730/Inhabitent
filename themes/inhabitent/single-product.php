@@ -27,9 +27,9 @@ get_header(); ?>
       		<?php the_content(); ?>
 
 					<div class="social-buttons">
-						<button><i class="fa fa-facebook"></i> Like</button>
-						<button><i class="fa fa-twitter"></i> Tweet</button>
-						<button><i class="fa fa-pinterest"></i> Pin</button>
+						<button class="single-post-social"><i class="fa fa-facebook"></i> Like</button>
+						<button class="single-post-social"><i class="fa fa-twitter"></i> Tweet</button>
+						<button class="single-post-social"><i class="fa fa-pinterest"></i> Pin</button>
 					</div>
       	</div><!-- .entry-content -->
 

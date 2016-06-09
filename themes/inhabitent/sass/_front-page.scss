@@ -22,7 +22,7 @@
   width: 280px;
 }
 
-//Shop Stuff
+/*///// Shop Stuff /////*/
 .shop-stuff{
   margin-bottom: 4rem;
 }
@@ -57,7 +57,7 @@
 
 
 
-//Inhabitent Journals
+/*///// Inhabitent Journals /////*/
 .inhabitent-journals{
   margin-bottom: 4.5rem;
 }
@@ -109,4 +109,126 @@
   font-size: 1.5rem;
   margin-top: 0;
   margin-bottom: 1.5rem;
+}
+
+/*///// Latest Adventures /////*/
+.inhabitent-adventures{
+  margin-bottom: 2.5rem;
+}
+
+.latest-adventures{
+  width: 1120px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.header-one{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 10;
+  margin: 2rem;
+  width: 500px;
+
+  .title-one{
+    font-size: 3rem;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+}
+
+.header-two{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 10;
+  margin: 2rem;
+  width: 500px;
+
+  .title-two{
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+}
+
+.header-three{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 10;
+  margin: 2rem;
+  width: 250px;
+
+  .title-three{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+}
+
+.header-four{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 10;
+  margin: 2rem 1rem;
+  width: 250px;
+
+  .title-four{
+    font-size:1.5rem;
+    line-height: 1.5;
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+}
+
+
+.left-box{
+  width: 49.5%;
+}
+
+.adventure-wrapper-one{
+
+  img{
+    height: 520px;
+  }
+}
+
+.right-box{
+  width: 49%;
+}
+
+.adventure-wrapper-two{
+
+  img{
+    height: 250px;
+  }
+}
+
+.bottom-box{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-top: .7rem;
+}
+
+.adventure-wrapper-three{
+  width: 48%;
+
+  img{
+    height: 250px;
+  }
+}
+
+.adventure-wrapper-four{
+  width: 48%;
+
+  img{
+    height: 250px;
+  }
 }

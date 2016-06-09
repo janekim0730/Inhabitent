@@ -21,9 +21,11 @@ get_header(); ?>
 
 				<div class="product-grid-item">
 					<div class="thumbnail-wrapper">
-						<?php if ( has_post_thumbnail() ) : ?>
-						<?php the_post_thumbnail( 'large' ); ?>
-						<?php endif; ?>
+						<a href='<?php echo esc_url( get_permalink() ); ?>'>
+							<?php if ( has_post_thumbnail() ) : ?>
+							<?php the_post_thumbnail( 'large' ); ?>
+							<?php endif; ?>
+						</a>
 					</div>
 
 					<div class="product-info">

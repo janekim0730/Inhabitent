@@ -9,7 +9,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
+			
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -28,7 +28,7 @@ get_header(); ?>
 				<div class="entry-content">
 
 						<?php the_content(); ?>
-				
+
 
 					<footer class="entry-footer">
 						<?php red_starter_entry_footer(); ?>
