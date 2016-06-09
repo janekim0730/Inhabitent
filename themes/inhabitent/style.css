@@ -1299,6 +1299,11 @@ object {
       flex-wrap: nowrap;
   margin-bottom: 1rem; }
 
+.adventure-wrapper-one {
+  border: 1px solid red;
+  width: 100%;
+  height: 100%; }
+
 .header-one {
   display: -ms-flexbox;
   display: flex;
@@ -1362,14 +1367,28 @@ object {
 .left-box {
   width: 49.5%; }
 
-.adventure-wrapper-one img {
-  height: 520px; }
+.adventure-wrapper-one {
+  position: relative; }
+  .adventure-wrapper-one img {
+    height: 520px;
+    display: block; }
+  .adventure-wrapper-one:before {
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.35);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
 
 .right-box {
   width: 49%; }
 
 .adventure-wrapper-two img {
   height: 250px; }
+
+.adventure-wrapper-two img {
+  display: block; }
 
 .bottom-box {
   display: -ms-flexbox;

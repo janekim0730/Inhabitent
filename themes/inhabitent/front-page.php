@@ -84,7 +84,7 @@ get_header(); ?>
 			<div class="adventure-wrapper-two">
 			<div class="header-two"><a class="title-two" href="<?php echo $adventure_posts[1]->guid;?>"><?php echo $adventure_posts[1]->post_title; ?></a>
 			<a class="adventure-read-more" href="<?php echo $adventure_posts[1]->guid;?>">Read More</a></div>
-			<?php echo get_the_post_thumbnail($adventure_posts[1]->ID, 'large');?>
+			<div class="adventure-image"><?php echo get_the_post_thumbnail($adventure_posts[1]->ID, 'large');?></div>
 			</div>
 
 			<div class="bottom-box">
