@@ -490,7 +490,8 @@ input[type="submit"],
   .single-post-social:hover,
   .single-post-social a:hover {
     background-color: #248a83;
-    color: #fff; }
+    color: #fff;
+    border: none; }
   .read-more:active,
   .read-more a:active, .read-more:focus,
   .read-more a:focus,
@@ -503,7 +504,8 @@ input[type="submit"],
   .single-post-social:focus,
   .single-post-social a:focus {
     background-color: #248a83;
-    color: #fff; }
+    color: #fff;
+    border: none; }
 
 .adventure-read-more {
   width: 130px;
@@ -701,7 +703,6 @@ a {
 --------------------------------------------------------------*/
 .widget-area {
   padding-left: 5%;
-  padding-top: 3rem;
   padding-bottom: 3rem;
   width: 27%; }
 
@@ -944,19 +945,14 @@ object {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 3rem; }
+  padding-top: 4.5rem; }
 
 .site-main,
 .search-main {
   border-right: 1px solid #e1e1e1;
   padding-right: 3rem;
   width: 73%;
-  padding-top: 3rem;
   padding-bottom: 3rem; }
-
-.widget-area {
-  width: 27%;
-  padding-left: 3rem; }
 
 .required {
   color: #d99054; }

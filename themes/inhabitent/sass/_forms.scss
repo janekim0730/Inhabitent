@@ -55,6 +55,7 @@ input[type="submit"],
 	a:hover {
    background-color: #248a83;
 	 color: #fff;
+	 border: none;
  	}
 
 	&:active,
@@ -63,6 +64,7 @@ input[type="submit"],
 	a:focus {
 	 background-color: #248a83;
 	 color: #fff;
+	 border: none;
 	}
 }
 

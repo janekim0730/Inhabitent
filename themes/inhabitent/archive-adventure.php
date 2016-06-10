@@ -7,34 +7,46 @@
 
 get_header(); ?>
 
-	<div id="primary" class="contents-area">
+	<div id="primary" class="content-area">
 		<main id="main" class="sites-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
+			<?php $args = array('post_type' => 'adventure',
+ 	 											 'posts_per_page' => 4,
+ 											   'order' => 'ASC');
+ 					 $adventure_posts = get_posts($args); ?>
 
-			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
+ 	<div class="container">
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+		<header class="page-header">
+			<?php
+				the_archive_title( '<h1 class="page-title">', '</h1>' );
+			?>
+		</header><!-- .page-header -->
 
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
+ 			<div class="adventure-wrapper">
+ 			<div class="adventure-header"><a href="<?php echo $adventure_posts[0]->guid;?>"><?php echo $adventure_posts[0]->post_title; ?></a>
+ 			<a class="adventure-read-more" href="<?php echo $adventure_posts[0]->guid;?>">Read More</a></div>
+ 			<?php echo get_the_post_thumbnail($adventure_posts[0]->ID, 'large');?>
+ 			</div>
 
-			<?php endwhile; ?>
+ 			<div class="adventure-wrapper">
+ 			<div class="adventure-header"><a href="<?php echo $adventure_posts[1]->guid;?>"><?php echo $adventure_posts[1]->post_title; ?></a>
+ 			<a class="adventure-read-more" href="<?php echo $adventure_posts[1]->guid;?>">Read More</a></div>
+ 			<?php echo get_the_post_thumbnail($adventure_posts[1]->ID, 'large');?>
+ 			</div>
 
-			<?php the_posts_navigation(); ?>
+ 			<div class="adventure-wrapper">
+ 			<div class="adventure-header"><a href="<?php echo $adventure_posts[2]->guid;?>"><?php echo $adventure_posts[2]->post_title; ?></a>
+ 			<a class="adventure-read-more" href="<?php echo $adventure_posts[2]->guid;?>">Read More</a></div>
+ 			<?php echo get_the_post_thumbnail($adventure_posts[2]->ID, 'large');?>
+ 			</div>
 
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>
+ 			<div class="adventure-wrapper">
+ 			<div class="adventure-header"><a href="<?php echo $adventure_posts[3]->guid;?>"><?php echo $adventure_posts[3]->post_title; ?></a>
+ 			<a class="adventure-read-more" href="<?php echo $adventure_posts[3]->guid;?>">Read More</a></div>
+ 			<?php echo get_the_post_thumbnail($adventure_posts[3]->ID, 'large');?>
+ 			</div>
+ 	</div><!--latest-adventures-->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
