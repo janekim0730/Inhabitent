@@ -124,7 +124,6 @@
   margin-bottom: 1rem;
 }
 
-
 .adventure-wrapper-one{
   position: relative;
 
@@ -150,13 +149,18 @@
   position: absolute;
   z-index: 10;
   margin: 2rem;
-  width: 500px;
+  width: 450px;
 
   .title-one{
     font-size: 3rem;
     line-height: 1.2;
     color: #fff;
     margin-bottom: 2rem;
+
+    &:hover,
+    &focus{
+      color: #f0e4d1;
+    }
   }
 }
 
@@ -166,13 +170,18 @@
   position: absolute;
   z-index: 10;
   margin: 2rem;
-  width: 500px;
+  width: 450px;
 
   .title-two{
     font-size: 2.5rem;
     line-height: 1.5;
     color: #fff;
     margin-bottom: 2rem;
+
+    &:hover,
+    &focus{
+      color: #f0e4d1;
+    }
   }
 }
 
@@ -189,6 +198,11 @@
     line-height: 1.5;
     color: #fff;
     margin-bottom: 2rem;
+
+    &:hover,
+    &focus{
+      color: #f0e4d1;
+    }
   }
 }
 
@@ -205,6 +219,11 @@
     line-height: 1.5;
     color: #fff;
     margin-bottom: 2rem;
+
+    &:hover,
+    &focus{
+      color: #f0e4d1;
+    }
   }
 }
 
@@ -278,4 +297,8 @@
     left: 0;
     right: 0;
   }
+}
+
+.more-adventures{
+  font-size: 1.2rem;
 }

@@ -511,7 +511,9 @@ input[type="submit"],
   width: 130px;
   padding: .5rem;
   text-align: center;
+  font-family: Novecento, sans-serif;
   background-color: transparent;
+  text-transform: uppercase;
   border: 1px solid #fff;
   color: #fff; }
   .adventure-read-more:hover,
@@ -523,6 +525,28 @@ input[type="submit"],
   .adventure-read-more a:active, .adventure-read-more:focus,
   .adventure-read-more a:focus, .adventure-read-more:visited,
   .adventure-read-more a:visited {
+    background-color: #248a83;
+    color: #fff;
+    border: none; }
+
+.adventures-read-more {
+  width: 130px;
+  padding: .7rem 1.5rem;
+  text-align: center;
+  font-family: Novecento, sans-serif;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  color: #fff; }
+  .adventures-read-more:hover,
+  .adventures-read-more a:hover {
+    background-color: #248a83;
+    color: #fff;
+    border: none; }
+  .adventures-read-more:active,
+  .adventures-read-more a:active, .adventures-read-more:focus,
+  .adventures-read-more a:focus, .adventures-read-more:visited,
+  .adventures-read-more a:visited {
     background-color: #248a83;
     color: #fff;
     border: none; }
@@ -847,13 +871,13 @@ object {
   -ms-flex-pack: center;
       justify-content: center;
   font-family: Novecento;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem; }
   .shop-nav-container a {
     margin: 0 1rem; }
 
 .page-header {
   border-bottom: 1px dashed #e1e1e1;
-  padding-bottom: 40px;
   margin-bottom: 40px;
   text-align: center; }
 
@@ -952,7 +976,8 @@ object {
   border-right: 1px solid #e1e1e1;
   padding-right: 3rem;
   width: 73%;
-  padding-bottom: 3rem; }
+  padding-bottom: 3rem;
+  padding-top: 1.5rem; }
 
 .required {
   color: #d99054; }
@@ -1100,6 +1125,62 @@ object {
     margin-bottom: 1.5rem; }
 
 /*///////////// Archive Adventure Page ///////////// */
+.latest-archive-adventure {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-bottom: 4.5rem; }
+
+.adventure-item {
+  -ms-flex: 0 1 49%;
+      flex: 0 1 49%;
+  margin-bottom: 1.5rem;
+  position: relative;
+  max-width: 49%; }
+
+.adventure-item:before {
+  background-color: rgba(0, 0, 0, 0.4);
+  content: "";
+  float: left;
+  padding-top: 100%; }
+
+.adventure-wrapper {
+  display: block;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.adventure-images img {
+  left: 50%;
+  max-height: 550px;
+  max-width: none;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10; }
+
+.adventure-header {
+  margin: 4.5rem 1.5rem;
+  position: absolute;
+  z-index: 20; }
+
+.adventures-title {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 4.5rem; }
+  .adventures-title a {
+    color: #fff; }
+    .adventures-title a:hover, .adventures-title a:focus {
+      color: #f0e4d1; }
+
 /*///////////// 404 Page ///////////// */
 .widgettitle {
   font-size: 1.5rem; }
@@ -1345,12 +1426,14 @@ object {
   position: absolute;
   z-index: 10;
   margin: 2rem;
-  width: 500px; }
+  width: 450px; }
   .header-one .title-one {
     font-size: 3rem;
     line-height: 1.2;
     color: #fff;
     margin-bottom: 2rem; }
+    .header-one .title-one:hover, .header-one .title-onefocus {
+      color: #f0e4d1; }
 
 .header-two {
   display: -ms-flexbox;
@@ -1360,12 +1443,14 @@ object {
   position: absolute;
   z-index: 10;
   margin: 2rem;
-  width: 500px; }
+  width: 450px; }
   .header-two .title-two {
     font-size: 2.5rem;
     line-height: 1.5;
     color: #fff;
     margin-bottom: 2rem; }
+    .header-two .title-two:hover, .header-two .title-twofocus {
+      color: #f0e4d1; }
 
 .header-three {
   display: -ms-flexbox;
@@ -1381,6 +1466,8 @@ object {
     line-height: 1.5;
     color: #fff;
     margin-bottom: 2rem; }
+    .header-three .title-three:hover, .header-three .title-threefocus {
+      color: #f0e4d1; }
 
 .header-four {
   display: -ms-flexbox;
@@ -1396,6 +1483,8 @@ object {
     line-height: 1.5;
     color: #fff;
     margin-bottom: 2rem; }
+    .header-four .title-four:hover, .header-four .title-fourfocus {
+      color: #f0e4d1; }
 
 .left-box {
   width: 49.5%; }
@@ -1455,6 +1544,9 @@ object {
     bottom: 0;
     left: 0;
     right: 0; }
+
+.more-adventures {
+  font-size: 1.2rem; }
 
 .menu-main-navigation {
   display: -ms-flexbox;

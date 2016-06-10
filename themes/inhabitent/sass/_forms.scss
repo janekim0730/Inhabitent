@@ -38,7 +38,7 @@ input[type="submit"],
 
 .read-more,
 .read-entry,
-.single-post-social {
+.single-post-social{
 	background-color: transparent;
 	border: 1px solid #000;
 	border-radius: 0;
@@ -72,7 +72,38 @@ input[type="submit"],
   width: 130px;
   padding: .5rem;
   text-align: center;
+	font-family: Novecento, sans-serif;
   background-color: transparent;
+	text-transform: uppercase;
+  border: 1px solid #fff;
+  color: #fff;
+
+	&:hover,
+  a:hover{
+    background-color: #248a83;
+    color: #fff;
+    border: none;
+  }
+
+	&:active,
+  a:active,
+	&:focus,
+  a:focus,
+	&:visited,
+  a:visited{
+    background-color: #248a83;
+    color: #fff;
+    border:none;
+  }
+}
+
+.adventures-read-more{
+  width: 130px;
+  padding: .7rem 1.5rem;
+  text-align: center;
+	font-family: Novecento, sans-serif;
+  background-color: transparent;
+	text-transform: uppercase;
   border: 1px solid #fff;
   color: #fff;
 
