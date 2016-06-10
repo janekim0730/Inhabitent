@@ -165,7 +165,8 @@
     color: #fff;
   }
 
-  a:hover{
+  a:hover,
+  &:hover{
     color: #f0e4d1;
   }
 
@@ -293,6 +294,43 @@
 .our-story{
   margin-bottom: 2rem;
 }
+
+/*///////////// Single Adventure Page ///////////// */
+.adventure-container{
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.adventure-title{
+  text-align: left;
+  line-height: 1.2;
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.adventure-author{
+  text-transform: uppercase;
+  font-family: Novecento, sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.adventure-content{
+  padding-top: 1rem;
+
+  p{
+    margin-bottom: 1.5rem;
+  }
+}
+
+/*///////////// Archive Adventure Page ///////////// */
+
+
+
 
 /*///////////// 404 Page ///////////// */
 .widgettitle{

@@ -10,39 +10,31 @@ get_header(); ?>
 	<div id="primary" class="adventure-area">
 		<main id="main" class="adventure-main" role="main">
 
+			<?php while ( have_posts() ) : the_post(); ?>
+
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<header class="entry-header">
+				<header class="adventure-header">
 					<?php if ( has_post_thumbnail() ) : ?>
-						<?php the_post_thumbnail( 'full' ); ?>
+					<?php the_post_thumbnail( 'full' ); ?>
 					<?php endif; ?>
-
-					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
-					<div class="entry-meta">
-					 <span>by<?php the_author(); ?></span>
-					</div><!-- .entry-meta -->
-				</header><!-- .entry-header -->
-
-				<div class="entry-content">
-					<?php the_content(); ?>
-					<?php
-						wp_link_pages( array(
-							'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
-							'after'  => '</div>',
-						) );
-					?>
-				</div><!-- .entry-content -->
+				</header><!---header-->
+					<div class="adventure-container">
+						<?php the_title( '<h1 class="adventure-title">', '</h1>' ); ?>
+						<span class="adventure-author">by <?php the_author(); ?></span>
+						<div class="adventure-content">
+							<?php the_content(); ?>
+						</div><!---content-->
+						<div class="social-buttons">
+						<button class="single-post-social"><i class="fa fa-facebook"></i> Like</button>
+						<button class="single-post-social"><i class="fa fa-twitter"></i> Tweet</button>
+						<button class="single-post-social"><i class="fa fa-pinterest"></i> Pin</button>
+					 </div><!--- social buttons-->
+					</div>
 			</article><!-- #post-## -->
 
-		<div class="social-buttons">
-			<button class="single-post-social"><i class="fa fa-facebook"></i> Like</button>
-			<button class="single-post-social"><i class="fa fa-twitter"></i> Tweet</button>
-			<button class="single-post-social"><i class="fa fa-pinterest"></i> Pin</button>
-		</div>
+			<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<footer class="entry-footer">
 <?php get_footer(); ?>
-</footer>
