@@ -1378,7 +1378,7 @@ object {
       flex-direction: column;
   position: absolute;
   z-index: 10;
-  margin: 1.5rem;
+  padding: 1.5rem;
   width: 235px; }
   .header-three .title-three {
     font-size: 1.5rem;
@@ -1393,7 +1393,7 @@ object {
       flex-direction: column;
   position: absolute;
   z-index: 10;
-  margin: 1.5rem;
+  padding: 1.5rem;
   width: 235px; }
   .header-four .title-four {
     font-size: 1.5rem;
@@ -1428,13 +1428,13 @@ object {
       justify-content: space-between;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  margin-top: .7rem; }
+  margin-top: 1rem; }
 
 .adventure-wrapper-three {
   position: relatvie;
-  width: 48%; }
+  width: 48.5%; }
   .adventure-wrapper-three img {
-    height: 250px;
+    height: 255px;
     display: block; }
   .adventure-wrapper-three:before {
     content: '';
@@ -1447,9 +1447,9 @@ object {
 
 .adventure-wrapper-four {
   position: relative;
-  width: 48%; }
+  width: 48.5%; }
   .adventure-wrapper-four img {
-    height: 250px;
+    height: 255px;
     display: block; }
   .adventure-wrapper-four:before {
     content: '';

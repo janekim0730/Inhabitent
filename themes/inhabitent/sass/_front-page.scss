@@ -181,7 +181,7 @@
   flex-direction: column;
   position: absolute;
   z-index: 10;
-  margin: 1.5rem;
+  padding: 1.5rem;
   width: 235px;
 
   .title-three{
@@ -197,7 +197,7 @@
   flex-direction: column;
   position: absolute;
   z-index: 10;
-  margin: 1.5rem;
+  padding: 1.5rem;
   width: 235px;
 
   .title-four{
@@ -239,15 +239,15 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  margin-top: .7rem;
+  margin-top: 1rem;
 }
 
 .adventure-wrapper-three{
   position: relatvie;
-  width: 48%;
+  width: 48.5%;
 
   img{
-    height: 250px;
+    height: 255px;
     display: block;
   }
   &:before {
@@ -263,10 +263,10 @@
 
 .adventure-wrapper-four{
   position: relative;
-  width: 48%;
+  width: 48.5%;
 
   img{
-    height: 250px;
+    height: 255px;
     display: block;
   }
   &:before {
