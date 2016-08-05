@@ -1,7 +1,6 @@
 #Inhabitent
 
 ##Summary
-![inhabitent](https://cloud.githubusercontent.com/assets/18406849/17197236/d63b821a-541f-11e6-8b07-0f871b5d902d.jpg)
 <p>A custom WordPress theme for an e-commerce website. It features a custom post type ('products', 'adventures'),
 a custom taxonomy ('product type'), two custom widgets ('business hours', 'contact information') and custom page templage
 ('about'). The custom page templage allows the authors to upload a features image and display it as a background image.
@@ -29,3 +28,5 @@ WordPress
 comfortable navigating around the WordPress CMS. It was interesting to see how handy the WordPress works and how users can
 customize it to match their needs. The hierarchy concenpt of WordPress was confusing at fist, but as I was developing, 
 I was able to understand it. I look forward to use more of WordPress in the future.</p>
+
+![inhabitent](https://cloud.githubusercontent.com/assets/18406849/17197236/d63b821a-541f-11e6-8b07-0f871b5d902d.jpg)
